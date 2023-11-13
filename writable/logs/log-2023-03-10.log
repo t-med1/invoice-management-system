@@ -1,0 +1,443 @@
+ERROR - 2023-03-10 09:56:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'suivifacture', 3306, '', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `code_ad...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\AuthController.php(26): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\AuthController->login()
+#7 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter\second_app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `code_ad...', Array, false)
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\AuthController.php(26): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\AuthController->login()
+#6 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#7 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter\second_app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-03-10 09:56:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `code_admin`
+FROM `admin`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\AuthController.php(26): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 09:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 09:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 09:57:37 --> Invalid file: "layouts/master.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/master.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/master', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/public/home', [], true)
+ 4 APPPATH\Controllers\FactureController.php(47): view('pages/public/home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 09:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 09:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 09:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 10:28:36 --> Invalid file: "layouts/master.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/master.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/master', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/public/create', [], true)
+ 4 APPPATH\Controllers\CreatingController.php(71): view('pages/public/create')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 10:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 10:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 11:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 11:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 12:08:02 --> Invalid file: "emplate/pages/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('emplate/pages/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emplate/pages/home', [], true)
+ 3 APPPATH\Controllers\FactureController.php(47): view('emplate/pages/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 12:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 12:09:29 --> Invalid file: "emplate/pages/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('emplate/pages/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emplate/pages/home', [], true)
+ 3 APPPATH\Controllers\FactureController.php(47): view('emplate/pages/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 12:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 12:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 14:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 16:56:57 --> Undefined property: stdClass::$date_dernier_paiment
+in APPPATH\Commands\CronoColumn.php on line 68.
+ 1 APPPATH\Commands\CronoColumn.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$date_dernier_paiment', 'APPPATH\\Commands\\CronoColumn.php', 68)
+ 2 SYSTEMPATH\CLI\Commands.php(65): App\Commands\CronoColumn->run([])
+ 3 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('cronocolumn', [])
+ 4 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-03-10 16:59:32 --> Undefined property: stdClass::$date_dernier_paiment
+in APPPATH\Commands\DateApres.php on line 68.
+ 1 APPPATH\Commands\DateApres.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$date_dernier_paiment', 'APPPATH\\Commands\\DateApres.php', 68)
+ 2 SYSTEMPATH\CLI\Commands.php(65): App\Commands\DateApres->run([])
+ 3 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('dateApres', [])
+ 4 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-03-10 17:01:51 --> Undefined property: stdClass::$date_dernier_paiment
+in APPPATH\Commands\DateApres.php on line 68.
+ 1 APPPATH\Commands\DateApres.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$date_dernier_paiment', 'APPPATH\\Commands\\DateApres.php', 68)
+ 2 SYSTEMPATH\CLI\Commands.php(65): App\Commands\DateApres->run([])
+ 3 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('dateApres', [])
+ 4 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+WARNING - 2023-03-10 17:05:26 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Commands\DateApres.php on line 69.
+ 1 APPPATH\Commands\DateApres.php(69): strtotime(null)
+ 2 SYSTEMPATH\CLI\Commands.php(65): App\Commands\DateApres->run([])
+ 3 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('dateApres', [])
+ 4 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+INFO - 2023-03-10 17:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:06:55 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 49 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(49): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:13:51 --> Class "CodeIgniter\Database\Connection" not found
+in APPPATH\Controllers\FactureController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:15:05 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 49 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(49): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:18:20 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 49 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(49): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:20:19 --> Too few arguments to function CodeIgniter\Log\Logger::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 49 and at least 1 expected
+in SYSTEMPATH\Log\Logger.php on line 120.
+ 1 APPPATH\Controllers\FactureController.php(49): CodeIgniter\Log\Logger->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:20:21 --> Too few arguments to function CodeIgniter\Log\Logger::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 49 and at least 1 expected
+in SYSTEMPATH\Log\Logger.php on line 120.
+ 1 APPPATH\Controllers\FactureController.php(49): CodeIgniter\Log\Logger->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:21:24 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 50 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(50): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:21:27 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 50 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(50): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:22:34 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 50 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(50): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:23:58 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 50 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(50): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:25:34 --> CodeIgniter\CLI\BaseCommand::__construct(): Argument #1 ($logger) must be of type Psr\Log\LoggerInterface, string given, called in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 52
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\CLI\BaseCommand->__construct('dateApres', Object(CodeIgniter\CLI\Commands))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:26:52 --> App\Commands\DateApres::__construct(): Argument #1 ($name) must be of type ?string, CodeIgniter\Log\Logger given, called in C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php on line 115
+in APPPATH\Commands\DateApres.php on line 10.
+ 1 SYSTEMPATH\CLI\Commands.php(115): App\Commands\DateApres->__construct(Object(CodeIgniter\Log\Logger), Object(CodeIgniter\CLI\Commands))
+ 2 SYSTEMPATH\CLI\Commands.php(46): CodeIgniter\CLI\Commands->discoverCommands()
+ 3 APPPATH\Controllers\FactureController.php(51): CodeIgniter\CLI\Commands->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:29:22 --> App\Commands\DateApres::__construct(): Argument #1 ($name) must be of type ?string, CodeIgniter\Log\Logger given, called in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 53
+in APPPATH\Commands\DateApres.php on line 10.
+ 1 APPPATH\Controllers\FactureController.php(53): App\Commands\DateApres->__construct(Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:32:11 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Commands\DateApres.php on line 14 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Commands\DateApres.php(14): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 APPPATH\Controllers\FactureController.php(53): App\Commands\DateApres->__construct(Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:34:21 --> App\Commands\DateApres::__construct(): Argument #1 ($name) must be of type ?string, CodeIgniter\Log\Logger given, called in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 53
+in APPPATH\Commands\DateApres.php on line 12.
+ 1 APPPATH\Controllers\FactureController.php(53): App\Commands\DateApres->__construct(Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:36:33 --> CodeIgniter\CLI\BaseCommand::__construct(): Argument #1 ($logger) must be of type Psr\Log\LoggerInterface, string given, called in C:\xampp\htdocs\codeigniter\second_app\app\Commands\DateApres.php on line 15
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Commands\DateApres.php(15): CodeIgniter\CLI\BaseCommand->__construct('dateApres', null)
+ 2 APPPATH\Controllers\FactureController.php(52): App\Commands\DateApres->__construct('dateApres')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:37:11 --> App\Commands\DateApres::__construct(): Argument #2 ($commands) must be of type ?App\Commands\Commands, CodeIgniter\Log\Logger given, called in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 53
+in APPPATH\Commands\DateApres.php on line 12.
+ 1 APPPATH\Controllers\FactureController.php(53): App\Commands\DateApres->__construct('dateApres', Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:37:43 --> App\Commands\DateApres::__construct(): Argument #2 ($commands) must be of type ?App\Commands\Commands, CodeIgniter\Log\Logger given, called in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 53
+in APPPATH\Commands\DateApres.php on line 12.
+ 1 APPPATH\Controllers\FactureController.php(53): App\Commands\DateApres->__construct('dateApres', Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:40:28 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 52 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:41:59 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 52 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 17:51:59 --> Undefined property: stdClass::$count
+in APPPATH\Controllers\FactureController.php on line 49.
+ 1 APPPATH\Controllers\FactureController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'APPPATH\\Controllers\\FactureController.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 17:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 18:01:55 --> Too few arguments to function CodeIgniter\CLI\BaseCommand::__construct(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\FactureController.php on line 27 and exactly 2 expected
+in SYSTEMPATH\CLI\BaseCommand.php on line 90.
+ 1 APPPATH\Controllers\FactureController.php(27): CodeIgniter\CLI\BaseCommand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 18:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 18:02:24 --> Undefined variable $count
+in APPPATH\Views\pages\home.php on line 44.
+ 1 APPPATH\Views\pages\home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count', 'APPPATH\\Views\\pages\\home.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/home', [], true)
+ 5 APPPATH\Controllers\FactureController.php(49): view('pages/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-10 18:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

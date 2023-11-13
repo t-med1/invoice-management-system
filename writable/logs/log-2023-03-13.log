@@ -1,0 +1,350 @@
+INFO - 2023-03-13 09:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 09:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 09:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 09:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 09:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 09:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 09:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 10:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 11:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 11:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 11:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 11:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 11:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 11:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 11:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 14:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 14:29:08 --> Undefined variable $client
+in APPPATH\Views\pages\tables\basicTable.php on line 41.
+ 1 APPPATH\Views\pages\tables\basicTable.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $client', 'APPPATH\\Views\\pages\\tables\\basicTable.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\tables\\basicTable.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/tables/basicTable', [], true)
+ 5 APPPATH\Controllers\ClientController.php(34): view('pages/tables/basicTable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ClientController->Relance()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 16:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 16:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 18:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 22:37:49 --> mysqli_sql_exception: Can't create table `suivifacture`.`facture` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\codeigniter\second_app\app\Database\Migrations\2023-03-06-181845_Facture.php(58): CodeIgniter\Database\Forge->createTable('facture')
+#5 C:\xampp\htdocs\codeigniter\second_app\system\Database\MigrationRunner.php(877): App\Database\Migrations\Facture->up()
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\codeigniter\second_app\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-13 22:38:33 --> mysqli_sql_exception: Can't create table `suivifacture`.`relancement` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\xampp\htdocs\codeigniter\second_app\app\Database\Migrations\2023-03-06-234809_Relancement.php(32): CodeIgniter\Database\Forge->createTable('relancement')
+#5 C:\xampp\htdocs\codeigniter\second_app\system\Database\MigrationRunner.php(877): App\Database\Migrations\Relancement->up()
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\codeigniter\second_app\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-13 22:41:53 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', NULL, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\codeigniter\second_app\app\Database\Seeds\RelancementSeeder.php(22): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Database\Seeder.php(146): App\Database\Seeds\RelancementSeeder->run()
+#7 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\codeigniter\second_app\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-03-13 22:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 22:45:49 --> Undefined array key "nom"
+in APPPATH\Controllers\FactureController.php on line 27.
+ 1 APPPATH\Controllers\FactureController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nom"', 'APPPATH\\Controllers\\FactureController.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 22:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 22:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 22:50:45 --> mysqli_sql_exception: Unknown column 'relancement.nom' in 'on clause' in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `client`...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client`...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client`...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\ClientController.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\ClientController->Relance()
+#6 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+#7 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter\second_app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-03-13 22:50:45 --> Unknown column 'relancement.nom' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`.*, `relancement`.*
+FROM `client`
+JOIN `relancement` ON `relancement`.`nom` = `client`.`nom`', [], false)
+ 2 APPPATH\Controllers\ClientController.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ClientController->Relance()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-13 22:52:02 --> mysqli_sql_exception: Unknown column 'nom' in 'where clause' in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relance...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relance...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relance...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relance...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\codeigniter\second_app\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\codeigniter\second_app\app\Models\Relancement.php(43): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\ClientController.php(41): App\Models\Relancement->updateRelancement('Telaj', true)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\ClientController->updateRelancement('Telaj')
+#10 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+#11 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\second_app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-03-13 22:52:02 --> Unknown column 'nom' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relancement` SET `relance_faite` = :relance_faite:
+WHERE `nom` = :nom:', [...], false)
+ 2 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 4 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 5 APPPATH\Models\Relancement.php(43): CodeIgniter\Model->update()
+ 6 APPPATH\Controllers\ClientController.php(41): App\Models\Relancement->updateRelancement('Telaj', true)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ClientController->updateRelancement('Telaj')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-13 22:53:00 --> mysqli_sql_exception: Unknown column 'nom' in 'where clause' in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relance...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relance...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relance...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relance...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\codeigniter\second_app\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\codeigniter\second_app\app\Models\Relancement.php(43): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\ClientController.php(41): App\Models\Relancement->updateRelancement('Telaj', true)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\ClientController->updateRelancement('Telaj')
+#10 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+#11 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\second_app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-03-13 22:53:00 --> Unknown column 'nom' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relancement` SET `relance_faite` = :relance_faite:
+WHERE `nom` = :nom:', [...], false)
+ 2 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 4 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 5 APPPATH\Models\Relancement.php(43): CodeIgniter\Model->update()
+ 6 APPPATH\Controllers\ClientController.php(41): App\Models\Relancement->updateRelancement('Telaj', true)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ClientController->updateRelancement('Telaj')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-13 22:53:05 --> mysqli_sql_exception: Unknown column 'nom' in 'where clause' in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relance...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relance...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relance...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relance...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\codeigniter\second_app\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\codeigniter\second_app\app\Models\Relancement.php(43): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\ClientController.php(41): App\Models\Relancement->updateRelancement('1', true)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\ClientController->updateRelancement('1')
+#10 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+#11 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\second_app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-03-13 22:53:05 --> Unknown column 'nom' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relancement` SET `relance_faite` = :relance_faite:
+WHERE `nom` = :nom:', [...], false)
+ 2 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 4 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 5 APPPATH\Models\Relancement.php(43): CodeIgniter\Model->update()
+ 6 APPPATH\Controllers\ClientController.php(41): App\Models\Relancement->updateRelancement('1', true)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ClientController->updateRelancement('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 22:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 22:55:42 --> Access denied for user 'your_username'@'localhost' (using password: YES)
+in APPPATH\Controllers\CreatingController.php on line 23.
+ 1 APPPATH\Controllers\CreatingController.php(23): mysqli_connect('localhost', 'your_username', 'your_password', 'your_database')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 22:56:22 --> Undefined array key "ht"
+in APPPATH\Controllers\CreatingController.php on line 40.
+ 1 APPPATH\Controllers\CreatingController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ht"', 'APPPATH\\Controllers\\CreatingController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 22:59:57 --> Column count doesn't match value count at row 1
+in APPPATH\Controllers\CreatingController.php on line 50.
+ 1 APPPATH\Controllers\CreatingController.php(50): mysqli_query(Object(mysqli), 'INSERT INTO client VALUES (\'Adib\', \'Chakib\', \'chakib.adib@gmail.com\', \'0534675423\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 23:08:57 --> Column count doesn't match value count at row 1
+in APPPATH\Controllers\CreatingController.php on line 58.
+ 1 APPPATH\Controllers\CreatingController.php(58): mysqli_query(Object(mysqli), 'INSERT INTO facture VALUES (\'F502\',\'3\', \'2023-03-13\', \'New Facture\', \'1000\', \'1200.00\', \'2023-03-13\', \'2023-03-21\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 23:12:30 --> Column count doesn't match value count at row 1
+in APPPATH\Controllers\CreatingController.php on line 67.
+ 1 APPPATH\Controllers\CreatingController.php(67): mysqli_query(Object(mysqli), 'INSERT INTO paiment VALUES (\'0\', NOW(), \'1000\',\'200\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 23:13:10 --> Duplicate entry 'F502' for key 'PRIMARY'
+in APPPATH\Controllers\CreatingController.php on line 58.
+ 1 APPPATH\Controllers\CreatingController.php(58): mysqli_query(Object(mysqli), 'INSERT INTO facture VALUES (\'F502\',\'5\', \'2023-03-13\', \'New Facture\', \'1000\', \'1200.00\', \'2023-03-13\',6,\'2023-03-21\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 23:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 23:15:37 --> Cannot add or update a child row: a foreign key constraint fails (`suivifacture`.`paiment`, CONSTRAINT `paiment_id_facture_foreign` FOREIGN KEY (`id_facture`) REFERENCES `facture` (`id_facture`))
+in APPPATH\Controllers\CreatingController.php on line 67.
+ 1 APPPATH\Controllers\CreatingController.php(67): mysqli_query(Object(mysqli), 'INSERT INTO paiment VALUES (default,\'0\', NOW(), \'1000\',\'200\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 23:18:18 --> Duplicate entry 'F502' for key 'PRIMARY'
+in APPPATH\Controllers\CreatingController.php on line 58.
+ 1 APPPATH\Controllers\CreatingController.php(58): mysqli_query(Object(mysqli), 'INSERT INTO facture VALUES (\'F502\',\'7\', \'2023-03-13\', \'New Facture\', \'1000\', \'1200.00\', \'2023-03-13\',6,\'2023-03-21\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 23:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 23:20:02 --> Cannot add or update a child row: a foreign key constraint fails (`suivifacture`.`paiment`, CONSTRAINT `paiment_id_facture_foreign` FOREIGN KEY (`id_facture`) REFERENCES `facture` (`id_facture`))
+in APPPATH\Controllers\CreatingController.php on line 66.
+ 1 APPPATH\Controllers\CreatingController.php(66): mysqli_query(Object(mysqli), 'INSERT INTO paiment VALUES (default,\'0\', NOW(), \'1000\',\'200\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 23:33:16 --> Duplicate entry 'F502' for key 'PRIMARY'
+in APPPATH\Controllers\CreatingController.php on line 58.
+ 1 APPPATH\Controllers\CreatingController.php(58): mysqli_query(Object(mysqli), 'INSERT INTO facture VALUES (\'F502\',\'9\', \'2023-03-13\', \'New Facture\', \'1000\', \'1200.00\', \'2023-03-13\',6,\'2023-03-21\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 23:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 23:34:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5','non Echue','normal','paiement partiel')' at line 1
+in APPPATH\Controllers\CreatingController.php on line 72.
+ 1 APPPATH\Controllers\CreatingController.php(72): mysqli_query(Object(mysqli), 'INSERT INTO status_paiment (\'5\',\'non Echue\',\'normal\',\'paiement partiel\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 23:36:05 --> Duplicate entry 'F502' for key 'PRIMARY'
+in APPPATH\Controllers\CreatingController.php on line 58.
+ 1 APPPATH\Controllers\CreatingController.php(58): mysqli_query(Object(mysqli), 'INSERT INTO facture VALUES (\'F502\',\'11\', \'2023-03-13\', \'New Facture\', \'1000\', \'1200.00\', \'2023-03-13\',6,\'2023-03-21\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-13 23:36:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DEFAULT,'6','non Echue','normal','paiement partiel')' at line 1
+in APPPATH\Controllers\CreatingController.php on line 72.
+ 1 APPPATH\Controllers\CreatingController.php(72): mysqli_query(Object(mysqli), 'INSERT INTO status_paiment (DEFAULT,\'6\',\'non Echue\',\'normal\',\'paiement partiel\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 23:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 23:51:54 --> Column count doesn't match value count at row 1
+in APPPATH\Controllers\CreatingController.php on line 64.
+ 1 APPPATH\Controllers\CreatingController.php(64): mysqli_query(Object(mysqli), 'INSERT INTO paiment VALUES (default,\'F502\', NOW(), \'1000\',\'200\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 23:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 23:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 23:56:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DEFAULT,'3','non Echue','normal','paiement partiel')' at line 1
+in APPPATH\Controllers\CreatingController.php on line 72.
+ 1 APPPATH\Controllers\CreatingController.php(72): mysqli_query(Object(mysqli), 'INSERT INTO status_paiment (DEFAULT,\'3\',\'non Echue\',\'normal\',\'paiement partiel\')')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->createData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

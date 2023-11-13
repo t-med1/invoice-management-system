@@ -1,0 +1,186 @@
+ERROR - 2023-04-14 17:09:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(600) NOT NULL,
+	`etat` ENUM('non accorde','accorde')(600) NOT NULL,
+	CONSTRA...' at line 8 in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\codeigniter\second_app\app\Database\Migrations\2023-03-04-181825_Devis.php(57): CodeIgniter\Database\Forge->createTable('devis')
+#5 C:\xampp\htdocs\codeigniter\second_app\system\Database\MigrationRunner.php(877): App\Database\Migrations\Devis->up()
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\codeigniter\second_app\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-14 17:11:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(600) NOT NULL,
+	`etat` ENUM('non accorde','accorde')(600) NOT NULL,
+	CONSTRA...' at line 8 in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\codeigniter\second_app\app\Database\Migrations\2023-03-04-181825_Devis.php(58): CodeIgniter\Database\Forge->createTable('devis')
+#5 C:\xampp\htdocs\codeigniter\second_app\system\Database\MigrationRunner.php(877): App\Database\Migrations\Devis->up()
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\codeigniter\second_app\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-14 17:13:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestionfacture`.`lignecommande`, CONSTRAINT `lignecommande_id_devis_foreign` FOREIGN KEY (`id_devis`) REFERENCES `devis` (`id_devis`)) in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', NULL, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\codeigniter\second_app\app\Database\Seeds\LigneCommandeSeeder.php(29): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Database\Seeder.php(146): App\Database\Seeds\LigneCommandeSeeder->run()
+#7 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\codeigniter\second_app\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-04-14 17:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-14 17:36:07 --> mysqli_sql_exception: Duplicate entry '504246878' for key 'ICE' in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', NULL, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\codeigniter\second_app\app\Database\Seeds\ClientSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Database\Seeder.php(146): App\Database\Seeds\ClientSeeder->run()
+#7 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\codeigniter\second_app\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-14 17:37:46 --> mysqli_sql_exception: Duplicate entry '504246878' for key 'ICE' in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', NULL, false)
+#4 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\codeigniter\second_app\app\Database\Seeds\ClientSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\codeigniter\second_app\system\Database\Seeder.php(146): App\Database\Seeds\ClientSeeder->run()
+#7 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\codeigniter\second_app\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\codeigniter\second_app\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-04-14 17:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 17:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-14 17:40:32 --> Undefined array key "prenom"
+in APPPATH\Controllers\DevisController.php on line 90.
+ 1 APPPATH\Controllers\DevisController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Controllers\\DevisController.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 17:41:26 --> Undefined array key "prenom"
+in APPPATH\Views\devis\listerdevis.php on line 41.
+ 1 APPPATH\Views\devis\listerdevis.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\listerdevis.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(104): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 17:42:46 --> Undefined array key "description_devis"
+in APPPATH\Controllers\DevisController.php on line 95.
+ 1 APPPATH\Controllers\DevisController.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description_devis"', 'APPPATH\\Controllers\\DevisController.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 17:43:13 --> Undefined array key "description_devis"
+in APPPATH\Controllers\DevisController.php on line 95.
+ 1 APPPATH\Controllers\DevisController.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description_devis"', 'APPPATH\\Controllers\\DevisController.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 17:46:37 --> Undefined property: stdClass::$prenom
+in APPPATH\Views\devis\ajouterdevis.php on line 37.
+ 1 APPPATH\Views\devis\ajouterdevis.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$prenom', 'APPPATH\\Views\\devis\\ajouterdevis.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\ajouterdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/ajouterdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(25): view('devis/ajouterdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->ajouterdevis()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-14 17:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-14 18:02:34 --> Undefined array key "prenom"
+in APPPATH\Views\devis\listeclient.php on line 39.
+ 1 APPPATH\Views\devis\listeclient.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\listeclient.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listeclient.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listeclient', [], true)
+ 5 APPPATH\Controllers\AddClientController.php(40): view('devis/listeclient', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-14 18:17:27 --> Undefined array key "prenom"
+in APPPATH\Views\devis\modifierclient.php on line 33.
+ 1 APPPATH\Views\devis\modifierclient.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\modifierclient.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierclient.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierclient', [], true)
+ 5 APPPATH\Controllers\AddClientController.php(46): view('devis/modifierclient', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->edit('7')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-14 18:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 18:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 18:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 18:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-14 18:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

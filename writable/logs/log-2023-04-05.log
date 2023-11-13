@@ -1,0 +1,103 @@
+INFO - 2023-04-05 08:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 08:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 08:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 08:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 08:50:24 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 52.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 08:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 08:53:04 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 52.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 08:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 08:58:05 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 52.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 09:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 09:05:32 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 52.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 09:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 09:06:41 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 51.
+ 1 APPPATH\Controllers\FactureController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 09:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 09:07:01 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 09:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 09:09:48 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 50.
+ 1 APPPATH\Controllers\FactureController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 09:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 09:32:43 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 53.
+ 1 APPPATH\Controllers\FactureController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 09:32:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DevisController.php on line 190.
+ 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 10:16:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DevisController.php on line 190.
+ 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 22:05:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DevisController.php on line 190.
+ 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

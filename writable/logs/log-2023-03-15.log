@@ -1,0 +1,293 @@
+INFO - 2023-03-15 09:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 09:46:58 --> syntax error, unexpected end of file
+in APPPATH\Views\pages\tables\basicTable.php on line 127.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/tables/basicTable', [], true)
+ 3 APPPATH\Controllers\RelanceController.php(27): view('pages/tables/basicTable', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RelanceController->Relance()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 09:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 09:47:51 --> Undefined array key "email"
+in APPPATH\Views\pages\tables\basicTable.php on line 86.
+ 1 APPPATH\Views\pages\tables\basicTable.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Views\\pages\\tables\\basicTable.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\tables\\basicTable.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/tables/basicTable', [], true)
+ 5 APPPATH\Controllers\RelanceController.php(27): view('pages/tables/basicTable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RelanceController->Relance()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 09:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 09:48:36 --> Undefined array key "numero_telephon"
+in APPPATH\Views\pages\tables\basicTable.php on line 87.
+ 1 APPPATH\Views\pages\tables\basicTable.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numero_telephon"', 'APPPATH\\Views\\pages\\tables\\basicTable.php', 87)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\tables\\basicTable.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/tables/basicTable', [], true)
+ 5 APPPATH\Controllers\RelanceController.php(27): view('pages/tables/basicTable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RelanceController->Relance()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 09:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 09:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 10:31:34 --> Undefined array key "jour_apres_emission"
+in APPPATH\Commands\IncrementJourApresEmission.php on line 22.
+ 1 APPPATH\Commands\IncrementJourApresEmission.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jour_apres_emission"', 'APPPATH\\Commands\\IncrementJourApresEmission.php', 22)
+ 2 SYSTEMPATH\CLI\Commands.php(65): App\Commands\IncrementJourApresEmission->run([])
+ 3 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('increment:japresemission', [])
+ 4 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-03-15 10:32:27 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Commands\IncrementJourApresEmission.php(25): CodeIgniter\Model->update('F-2023-03-004', [...])
+ 4 SYSTEMPATH\CLI\Commands.php(65): App\Commands\IncrementJourApresEmission->run([])
+ 5 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('increment:japresemission', [])
+ 6 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-03-15 10:35:26 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Commands\IncrementJourApresEmission.php(26): CodeIgniter\Model->update('F-2023-03-004', [...])
+ 4 SYSTEMPATH\CLI\Commands.php(65): App\Commands\IncrementJourApresEmission->run([])
+ 5 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('increment:japresemission', [])
+ 6 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-03-15 10:38:04 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Commands\IncrementJourApresEmission.php(26): CodeIgniter\Model->update('F-2023-03-004', [...])
+ 4 SYSTEMPATH\CLI\Commands.php(65): App\Commands\IncrementJourApresEmission->run([])
+ 5 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('increment:japresemission', [])
+ 6 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-03-15 10:39:57 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Commands\IncrementJourApresEmission.php(26): CodeIgniter\Model->update('F-2023-03-004', [...])
+ 4 SYSTEMPATH\CLI\Commands.php(65): App\Commands\IncrementJourApresEmission->run([])
+ 5 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('increment:japresemission', [])
+ 6 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-03-15 10:41:54 --> Undefined array key "jour_apres_emission"
+in APPPATH\Commands\IncrementJourApresEmission.php on line 22.
+ 1 APPPATH\Commands\IncrementJourApresEmission.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jour_apres_emission"', 'APPPATH\\Commands\\IncrementJourApresEmission.php', 22)
+ 2 SYSTEMPATH\CLI\Commands.php(65): App\Commands\IncrementJourApresEmission->run([])
+ 3 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('increment:japresemission', [])
+ 4 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-03-15 10:42:20 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Commands\IncrementJourApresEmission.php(26): CodeIgniter\Model->update('F-2023-03-004', [...])
+ 4 SYSTEMPATH\CLI\Commands.php(65): App\Commands\IncrementJourApresEmission->run([])
+ 5 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('increment:japresemission', [])
+ 6 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+INFO - 2023-03-15 12:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 12:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 12:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 12:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 15:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 15:55:01 --> Too few arguments to function App\Models\Facture::generateId(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\CreatingController.php on line 95 and exactly 1 expected
+in APPPATH\Models\Facture.php on line 44.
+ 1 APPPATH\Controllers\CreatingController.php(95): App\Models\Facture->generateId()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-15 15:58:28 --> Too few arguments to function App\Models\Facture::generateId(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\CreatingController.php on line 95 and exactly 1 expected
+in APPPATH\Models\Facture.php on line 44.
+ 1 APPPATH\Controllers\CreatingController.php(95): App\Models\Facture->generateId()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-15 15:58:31 --> Too few arguments to function App\Models\Facture::generateId(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\CreatingController.php on line 95 and exactly 1 expected
+in APPPATH\Models\Facture.php on line 44.
+ 1 APPPATH\Controllers\CreatingController.php(95): App\Models\Facture->generateId()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 16:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 16:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 16:05:44 --> Too few arguments to function App\Models\Facture::generateId(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\CreatingController.php on line 92 and exactly 1 expected
+in APPPATH\Models\Facture.php on line 44.
+ 1 APPPATH\Controllers\CreatingController.php(92): App\Models\Facture->generateId()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-15 16:14:21 --> Too few arguments to function App\Models\Facture::generateId(), 0 passed in C:\xampp\htdocs\codeigniter\second_app\app\Controllers\CreatingController.php on line 92 and exactly 1 expected
+in APPPATH\Models\Facture.php on line 35.
+ 1 APPPATH\Controllers\CreatingController.php(92): App\Models\Facture->generateId()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-15 16:16:15 --> Undefined array key "saisie"
+in APPPATH\Controllers\CreatingController.php on line 98.
+ 1 APPPATH\Controllers\CreatingController.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "saisie"', 'APPPATH\\Controllers\\CreatingController.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-15 16:17:13 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\Facture.php on line 37.
+ 1 APPPATH\Models\Facture.php(37): strtotime(null)
+ 2 APPPATH\Controllers\CreatingController.php(93): App\Models\Facture->generateId(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 16:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 16:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 16:53:57 --> Call to undefined method App\Models\Facture::generateId
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\CreatingController.php(96): CodeIgniter\Model->__call('generateId', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-15 16:54:18 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\Facture.php on line 47.
+ 1 APPPATH\Models\Facture.php(47): strtotime(null)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-15 16:54:18 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\Facture.php on line 48.
+ 1 APPPATH\Models\Facture.php(48): strtotime(null)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-15 16:54:18 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-15 16:54:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture('2023-03-03')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-15 16:55:49 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture('2023-03-03')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-15 16:55:59 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture('2023-03-03')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-15 16:56:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture('2023-02-03')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-15 16:56:38 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture('2023-05-03')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-15 16:59:08 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture('2023-05-03')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-15 16:59:27 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture('2023-05-03')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-15 16:59:38 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\Facture.php on line 61.
+ 1 APPPATH\Models\Facture.php(61): substr(null, -3)
+ 2 APPPATH\Controllers\CreatingController.php(96): App\Models\Facture->generate_id_facture('2023-05-03')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CreatingController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CreatingController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-15 16:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

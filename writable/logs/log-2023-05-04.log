@@ -1,0 +1,12 @@
+CRITICAL - 2023-05-04 14:40:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\factures\pages\editFacture.php on line 25.
+ 1 APPPATH\Views\factures\pages\editFacture.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\factures\\pages\\editFacture.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\factures\\pages\\editFacture.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('factures/pages/editFacture', [], true)
+ 5 APPPATH\Controllers\FactureController.php(145): view('factures/pages/editFacture', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->editFacture('10', 'logofms.png')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

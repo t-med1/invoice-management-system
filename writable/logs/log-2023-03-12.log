@@ -1,0 +1,20 @@
+CRITICAL - 2023-03-12 23:40:21 --> syntax error, unexpected token "echo"
+in APPPATH\Views\pages\tables\basicTable.php on line 54.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/tables/basicTable', [], true)
+ 3 APPPATH\Controllers\ClientController.php(34): view('pages/tables/basicTable', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ClientController->Relance()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-12 23:42:24 --> syntax error, unexpected token ":"
+in APPPATH\Views\pages\tables\basicTable.php on line 41.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/tables/basicTable', [], true)
+ 3 APPPATH\Controllers\ClientController.php(34): view('pages/tables/basicTable', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ClientController->Relance()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

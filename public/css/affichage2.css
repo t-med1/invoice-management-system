@@ -1,0 +1,116 @@
+
+
+.devis {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    display: none;
+}
+.devis p {
+    font-size: 1vw;
+}
+.info-box {
+    position: absolute;
+    top: 26%;
+    width: 100%;
+    height: 10.8%;
+}
+.info {
+    position: relative;
+    height: 100%;
+}
+.info p {
+    position: absolute;
+}
+.nom {
+    left: 20.3%;
+    top: 7%;
+}
+.adresse {
+    left: 20.3%;
+    top: 20%;
+}
+.pays {
+    left: 20.3%;
+    top: 47%;
+}
+.ville {
+    left: 49%;
+    top: 47%;
+}
+.tel {
+    left: 20.3%;
+    top: 60%;
+}
+.date {
+    left: 79%;
+    top: 6%;
+}
+.num {
+    left: 79%;
+    top: 20%;
+}
+
+.details-container{
+    height: 250%;
+}
+.details-container p {
+    font-size: 0.9vw;
+}
+.details {
+    display: flex;
+    width: 80%;
+    font-size: small;
+    padding: 0;
+    margin: 0 auto;
+}
+.details p {
+    width: 14%;
+    text-align: center;
+    font-size: 0.9vw;
+}
+
+.details p:nth-child(2) {
+    flex-grow: 1;
+    text-align: left;
+}
+.titre {
+    left: 20%;
+    display: block;
+    font-weight: bold;
+}
+.bottom{
+    position: relative;
+    width: 100%;
+    height: 112%; 
+}
+
+.bottom p {
+    position: absolute;
+    text-align: center;
+    font-size: 0.9vw;
+}
+
+.sous-total{
+    left: 78.5%;
+    width: 11.5%;
+}
+
+.tva{
+    left: 78.5%;
+    width: 11.5%;
+    top: 33.5%;
+}
+
+.ttc{
+    left: 78.5%;
+    width: 11.5%;
+    top: 46%;
+}
+
+.modalité{
+    top: 64%;
+    width: 34%;
+    left: 9.8%;
+}
+
