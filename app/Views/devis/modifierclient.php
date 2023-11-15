@@ -1,75 +1,163 @@
-<?php $this->extend('layouts/index') ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- titre du page -->
-<?php $this->section('title') ?>
-Gestion - Devis - Page
-<?php $this->endsection() ?>
-<!-- input search -->
-<?php $this->section('type') ?>
-hidden
-<?php $this->endsection() ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- input search by date-->
-<?php $this->section('datee') ?>
-hidden
-<?php $this->endsection() ?>
-<!-- h1 -->
-<?php $this->section('h1') ?>
-Modifier un Client
-<?php $this->endsection() ?>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Gestion Devis</title>
+</head>
+
+<body style="overflow-y: overlay;">
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text"><img src="../css/logo.png" alt="logo"></span>
+        </a>
+        <ul class="side-menu top">
+			<li>
+				<a href="dash">
+					<i class='bx bxs-home'></i>
+					<span class="text">Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="/devis">
+                    <i class="material-icons material-icons-outlined" style="font-size: 20px;padding-inline: 10px;">view_list</i>
+					<span class="text">Listes des Devis</span>
+				</a>
+			</li>
+			<li >
+				<a href="/createDevis">
+					<i class='bx bx-add-to-queue'></i>
+					<span class="text">Créer un devis</span>
+				</a>
+			</li>
+			<li>
+				<a href="/createClient">
+                    <i class='bx bxs-user-plus'></i>
+					<span class="text">Ajouter Client</span>
+				</a>
+			</li>
+			<li>
+				<a href="/listeClient">
+                    <i class='bx bx-list-ol'></i>
+					<span class="text">Liste des Clients</span>
+				</a>
+			</li>
+			<li>
+				<a href="/createService">
+                    <i class='bx bxs-add-to-queue'></i>
+					<span class="text">Ajouter service</span>
+				</a>
+			</li>
+			<li >
+				<a href="/listeService">
+					<i class='bx bx-list-ul'></i>
+					<span class="text">Liste des service</span>
+				</a>
+			</li>
+
+		</ul>
+        <ul class="side-menu">
+
+            <li>
+                <a href="/" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
 
 
-<!-- Le contenue du page home -->
-<?php $this->section('content') ?>
-<form method="post" action="<?= base_url('clientupdate/' . $client['id_client']) ?>">
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <br>
+                    <h1>Modifier un Client</h1>
+                    <br>
+                    <form method="post" action="<?= base_url('update/' . $client['id_client']) ?>">
 
 
-    <div class="row">
-        <div class="mb-3 col-sm-3">
-            <label for="n-client" class="form-label">ICE <font color="red">*</font></label>
-            <input type="text" class="form-control" id="n-client" name="ICE" value="<?= ($client['ICE']==0||$client['ICE']==null)?'Personne Normale':$client['ICE']?>" <?= ($client['ICE']==0||$client['ICE']==null)?'readOnly':''?>>
-        </div>
-    </div>
-    <div class="row">
-        <div class="mb-3 col-sm-4">
-            <label for="n-client" class="form-label">Nom Du Client <font color="red">*</font></label>
-            <input type="text" class="form-control" id="n-client" name="nom" value="<?= $client['nom']; ?>">
-        </div>
+                        <div class="row">
+                            <div class="mb-3 col-sm-3">
+                                <label for="n-client" class="form-label">ICE</label>
+                                <input type="text" class="form-control" id="n-client" name="ICE" value="<?= $client['ICE']; ?>">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-sm-4">
+                                <label for="n-client" class="form-label">Nom Du Client</label>
+                                <input type="text" class="form-control" id="n-client" name="nom" value="<?= $client['nom']; ?>">
+                            </div>
 
-        <div class="mb-3 col-sm-3">
-            <label for="numnberPhone" class="form-label">Telephone <font color="red">*</font></label>
-            <input type="text" class="form-control" id="numnberPhone" name="numero_telephone"
-                value="<?= $client['numero_telephone']; ?>">
-        </div>
+                            <div class="mb-3 col-sm-3">
+                                <label for="numnberPhone" class="form-label">Telephone</label>
+                                <input type="text" class="form-control" id="numnberPhone" name="numero_telephone" value="<?= $client['numero_telephone']; ?>">
+                            </div>
 
-        <div class="mb-3 col-sm-3">
-            <label for="mail" class="form-label">Email <font color="red">*</font></label>
-            <input type="email" class="form-control" id="mail" name="email_client"
-                value="<?= $client['email_client']; ?>">
-        </div>
+                            <div class="mb-3 col-sm-3">
+                                <label for="mail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="mail" name="email_client" value="<?= $client['email_client']; ?>">
+                            </div>
 
-    </div>
-    <div class="row">
+                        </div>
+                        <div class="row">
 
-        <div class="mb-3 col-sm-4">
-            <label for="adresse" class="form-label">Adresse <font color="red">*</font></label>
-            <input type="text" class="form-control" id="adresse" name="adresse" value="<?= $client['adresse']; ?>">
-        </div>
+                            <div class="mb-3 col-sm-4">
+                                <label for="adresse" class="form-label">Adresse</label>
+                                <input type="text" class="form-control" id="adresse" name="adresse" value="<?= $client['adresse']; ?>">
+                            </div>
 
-        <div class="mb-3 col-sm-3">
-            <label for="ville" class="form-label">Ville <font color="red">*</font></label>
-            <input type="text" class="form-control" id="ville" name="ville" value="<?= $client['ville']; ?>">
-        </div>
+                            <div class="mb-3 col-sm-3">
+                                <label for="ville" class="form-label">Ville</label>
+                                <input type="text" class="form-control" id="ville" name="ville" value="<?= $client['ville']; ?>">
+                            </div>
 
-        <div class="mb-3 col-sm-3">
-            <label for="Pays" class="form-label">Pays <font color="red">*</font></label>
-            <input type="text" class="form-control" id="Pays" name="pays" value="<?= $client['pays']; ?>">
-        </div>
+                            <div class="mb-3 col-sm-3">
+                                <label for="Pays" class="form-label">Pays</label>
+                                <input type="text" class="form-control" id="Pays" name="pays" value="<?= $client['pays']; ?>">
+                            </div>
 
-    </div>
+                        </div>
 
-    <button type="submit" class="btn btn-outline-primary">Modifier</button>
-</form>
-<script src="../css/home.js"></script>
-<script src="../jquery-3.6.4.min.js"></script>
-<?php $this->endsection() ?>
+                        <button type="submit" class="btn btn-primary">Modifier</button>
+                    </form>
+
+
+                    <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+
+
+    <script src="../css/home.js"></script>
+    <script src="../jquery-3.6.4.min.js"></script>
+
+</body>
+
+</html>

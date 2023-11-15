@@ -1,182 +1,173 @@
-<?php $this->extend('layouts/master') ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- titre du page -->
-<?php $this->section('title') ?>
-Home - Page
-<?php $this->endsection() ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- h1 -->
-<?php $this->section('h1') ?>
-Factures
-<?php $this->endsection() ?>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<!-- class active -->
-<?php $this->section('home') ?>
-active
-<?php $this->endsection() ?>
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/home.css">
 
-<!-- Le contenue du page home -->
-<?php $this->section('content') ?>
-<?php if (session()->getFlashdata('success')): ?>
-    <div class="alert alert-success" id="myDiv">
-        <?= session()->getFlashdata('success') ?>
-    </div>
-<?php endif; ?>
-<article>
-    <table class="table table-light table-hover table-striped rounded text-center" style="overflow: hidden"
-        id='factures'>
-        <thead>
-            <tr>
-                <th>Numéro Du Facture</th>
-                <th>Nom Du Client</th>
-                <th>Date Saisie</th>
-                <th>Total HT</th>
-                <th>Total TTC</th>
-                <th>Date Emission</th>
-                <th>Date Echéance</th>
-                <th>Date Dernier Paiement</th>
-                <th>Montant Payé</th>
-                <th>Status</th>
-                <th>Status Litige</th>
-                <th>Status Du Paiment</th>
-                <th>ACTION</th>
-                <th>Imprimer</th>
-            </tr>
-        </thead>
-        <?php if (isset($factures)): ?>
-            <tbody>
-                <?php $count = 1;
-                foreach ($factures as $fact): ?>
-                    <tr>
-                        <td>
-                            <?= $fact['id_facture'] ?>
-                        </td>
-                        <td>
-                            <?= isset($fact['nom']) ? $fact['nom'] : '' ?>
-                        </td>
-                        <td>
-                            <?= $fact['date_saisie'] ?>
-                        </td>
-                        <td>
-                            <?= $fact['total_ht'] ?>
-                        </td>
-                        <td>
-                            <?= $fact['total_ttc'] ?>
-                        </td>
-                        <td>
-                            <?= $fact['date_emission'] ?>
-                        </td>
-                        <td>
-                            <?= $fact['date_echeance'] ?>
-                        </td>
-                        <td>
-                            <?= isset($fact['date_dernier_paiment']) ? $fact['date_dernier_paiment'] : '00-00-00' ?>
-                        </td>
-                        <td>
-                            <?= isset($fact['montant_paye']) ? $fact['montant_paye'] : '00.00' ?>
-                        </td>
-                        <td>
-                            <?= $fact['status'] ?>
-                        </td>
-                        <td>
-                            <?= isset($fact['status_litige']) ? $fact['status_litige'] : '' ?>
-                        </td>
-                        <td>
-                            <?= isset($fact['status_paiment']) ? $fact['status_paiment'] : '' ?>
-                        </td>
-                        <td>
-                            <a href="/factureModify/<?= $fact['id_client'] ?>/<?= $fact['id_devis'] ?>" class="text-success">
-                               <span class="material-icons">edit</span>
-                            </a>
-                            <a class="delete"><span class="material-icons" onclick="event.preventDefault(); 
-                                                    Swal.fire({
-                                                    title: 'Êtes-vous sûr?',
-                                                    text: 'supprimer la facture  !',
-                                                    icon: 'warning',
-                                                    showCancelButton: true,
-                                                    confirmButtonColor: '#3085d6',
-                                                    cancelButtonColor: '#d33',
-                                                    confirmButtonText: 'Oui, supprimer'
-                                                    }).then((result) => {
-                                                    if (result.isConfirmed) {
-                                                        window.location.href = '/deleteFacture/<?= $fact['id_facture'] ?>';}});">delete</span></a>
-                        </td>
-                        <td>
-						    <a href="#"><span class="material-icons material-icons-outlined download" id="<?= $count ?>">picture_as_pdf</span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="10" style="padding: 0;">
-                            <div class="devis" id="<?= 'devis' . $count ?>">
-                                <img src="../../css/facture.jpg" width="100%" class="bg">
-                                <div class="info-box">
-                                    <div class="info">
-                                        <p class="nom"><?= $fact['nom'] ?></p>
-                                        <p class="adresse"><?= $fact['adresse'] ?></p>
-                                        <p class="pays"><?= $fact['pays'] ?></p>
-                                        <p class="ville"><?= $fact['ville'] ?></p>
-                                        <p class="tel"><?= ( $fact['ICE']==0||$fact['ICE']==null )?'Personne normale': $fact['ICE']?></p>
-                                        <p class="date"><?= $fact['date_saisie'] ?></p>
-                                        <p class="num"><?= $fact["id_facture"]; ?></p>
-                                    </div>
-                                    <div class="details-container">
-                                        <?php foreach ($fact["infos"] as $infos) : ?>
-                                            <div class="details">
-                                                <p class="qte"><?= $infos['qte_commande'] ?></p>
-                                                <p><span class="titre"><?= $infos['titre'] ?></span><?= nl2br($infos["description_service"])  ?></p>
-                                                <p class="prix"><?= $infos['prix_unitaire'] ?> D</p>
-                                                <p class="total"><?= number_format($infos['qte_commande'] * $infos['prix_unitaire'], 2, '.', ' ') ?> D</p>
-                                            </div>
-                                        <?php endforeach; ?>
-                                    </div>
-                                    <div class="bottom">
-                                        <p class="sous-total"><?= $fact['total_ht'] ?> D</p>
-                                        <p class="tva"><?= number_format($fact['total_ttc'] - $fact['total_ht'], 2, '.', ' ') ?> D</p>
-                                        <p class="ttc"><?= $fact['total_ttc'] ?> D</p>
-                                        <p class="modalité"><?= $fact['modalite_paiement'] ?></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr></tr>
-                <?php $count++; endforeach; ?>
-            </tbody>
-        <?php endif; ?>
-    </table>
-</article>
-<script src="../../css/home.js"></script>
-<script src="../jquery-3.6.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js" integrity="sha512-234m/ySxaBP6BRdJ4g7jYG7uI9y2E74dvMua1JzkqM3LyWP43tosIqET873f3m6OQ/0N6TKyqXG4fLeHN9vKkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-</script>
-<script>
-        $(document).ready(function() {
-            setTimeout(function() {
-                $('#myDiv').slideUp();
-            }, 1000);
-        });
-    </script>
+
+    <title>Gestion Devis</title>
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text"><img src="../css/logo.png" alt="logo"></span>
+        </a>
+        <ul class="side-menu top">
+            <li>
+                <a href="/dash">
+                    <i class='bx bxs-home'></i>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Listes des Factures</span>
+                </a>
+            </li>
+            <li>
+                <a href="/createFacture">
+                    <i class='bx bx-add-to-queue'></i>
+                    <span class="text">Créer une facture</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tablesRelance">
+                    <i class='bx bxs-user-plus'></i>
+                    <span class="text">Relancement</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="side-menu">
+
+            <li>
+                <a href="#" cl="t">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="search">
+                <div class="form-input">
+                    <input type="search" placeholder="Search..." name="keyword">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <form action="Bydate">
+                <div class="form-input">
+                    <input type="date" placeholder="Search..." name="dateSearch">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <!-- <input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="profile">
+				<img src="img/people.png"> -->
+            </a>
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <br>
+                    <h1>Liste des Factures</h1>
+                    <br>
+
+                    <?php if (session()->getFlashdata('success')) : ?>
+                        <div class="alert alert-success" id="myDiv">
+                            <?= session()->getFlashdata('success') ?>
+                        </div>
+                    <?php endif; ?>
+                    <article>
+                        <?php if (isset($factures)) : ?>
+                            <table class="table table-light table-hover table-striped rounded" style="overflow: hidden" id='factures'>
+                                <thead>
+                                    <tr>
+                                        <th>Numéro Du Facture</th>
+                                        <th>Nom Du Client</th>
+                                        <th>Date Saisie</th>
+                                        <th>Descriptif Facture</th>
+                                        <th>Total HT</th>
+                                        <th>Total TTC</th>
+                                        <th>Date Emission</th>
+                                        <th>Date Echéance</th>
+                                        <th>Montant Payé</th>
+                                        <th>Status Du Paiment</th>
+                                        <th class="col-1">ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($factures as $fact) : ?>
+                                        <tr>
+                                            <td><?= $fact['id_facture'] ?></td>
+                                            <td><?= isset($fact['nom']) ? $fact['nom'] : '' ?> </td>
+                                            <td><?= $fact['date_saisie'] ?></td>
+                                            <td>
+                                                <?php foreach ($fact["infos"] as $infos) { ?>
+                                                    <?= '<strong>' . $infos["titre"] . '</strong><br><br>' ?>
+                                                <?php } ?>
+                                            </td>
+                                            <td><?= $fact['total_ht'] ?></td>
+                                            <td><?= $fact['total_ttc'] ?></td>
+                                            <td><?= $fact['date_emission'] ?></td>
+                                            <td><?= $fact['date_echeance'] ?></td>
+                                            <td><?= $fact['montant_paye'] ?></td>
+                                            <td><?= $fact['status_paiment'] ?></td>
+                                            <td>
+                                                <a href="/factureModify/<?= $fact['id_client'] ?>/<?= $fact['id_devis'] ?>"><span class="material-icons">edit</span></a>
+                                                <a href="/deleteFacture/<?= $fact['id_facture'] ?>"><span class="material-icons">delete</span></a>
+                                                <a href="<?= base_url('factures/affichageFct/' . $fact["id_devis"]) ?>" class="show"><span class="material-icons material-icons-outlined">visibility</span></a>
+                                                <a href="#"><span class="material-icons material-icons-outlined" style="padding:12px"></span></a>
+                                                <a href="#"><span class="material-icons material-icons-outlined download" id="">file_download</span></a>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        <?php endif; ?>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+    <script src="../css/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-        console.clear()
-        document.querySelectorAll('.download').forEach(btn => {
-            btn.addEventListener('click', e => {
-                $('#devis' + e.target.id).show()
-                html2canvas(document.getElementById('devis' + e.target.id))
-                    .then(canvas => {
-                        let base64image = canvas.toDataURL('image/png');
-                        console.log(base64image);
+    $(document).ready(function () {
+        setTimeout(function () {
+            $('#myDiv').slideUp();
+        }, 1000);
+    });
+</script>
+</body>
 
-                        let pdf = new jsPDF('p', 'px', [1117, 1423]);
-                        pdf.addImage(base64image, 'PNG', 4, -30, 1117, 1400);
-                        pdf.save('Facture.pdf')
-                    });
-                $('#devis' + e.target.id).hide()
-
-            })
-        })
-    </script>
-<?php $this->endsection() ?>
+</html>

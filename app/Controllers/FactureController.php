@@ -10,7 +10,6 @@ use App\Models\LigneCommandeModel;
 use App\Models\Paiment;
 use App\Models\Relancement;
 use App\Models\ServiceModel;
-use Dompdf\Dompdf;
 
 
 class FactureController extends BaseController
@@ -54,16 +53,11 @@ class FactureController extends BaseController
                 'status' => $facture['status'],
                 'status_litige' => $facture['status_litige'],
                 'status_paiment' => $facture['status_paiment'],
-                'ICE'=>$facture['ICE'],
-                'adresse'=>$facture['adresse'],
-                'pays' => $facture['pays'],
-                'ville' => $facture['ville'],
-                'modalite_paiement' => $facture['modalite_paiement'],
                 'infos' => $infos,
             ]);
         }
         $factures = array_unique($factures, SORT_REGULAR);
-        $factures = array_filter($factures, function ($facture, $index) use ($factures) {
+        $factures = array_filter($factures, function($facture, $index) use($factures) {
             for ($i = 0; $i < $index; $i++) {
                 if ($facture['id_facture'] == $factures[$i]['id_facture']) {
                     return false;
@@ -74,57 +68,62 @@ class FactureController extends BaseController
         // sending data to the View home
         return view('factures/pages/home', ['factures' => $factures]);
     }
+
+
+
     public function search()
-{
-    $keyword = $this->request->getVar('keyword'); // get the search keyword from the input field
+    {
+        $keyword = $this->request->getVar('keyword'); // get the search keyword from the input field
 
-    $db = db_connect(); // connect to the database
+        $db = db_connect(); // connect to the database
 
-    // perform a join query between the `Client`, `Facture`, and `Paiment` tables
-    $result = $db->table('client')
+        // perform a join query between the `Client`, `Facture`, and `Paiment` tables
+        $result = $db->table('client')
         ->join('facture', 'facture.id_client = client.id_client')
         ->join('paiment', 'paiment.id_facture = facture.id_facture')
         ->join('devis', 'client.id_client = devis.id_client')
-        ->select('client.*, facture.*, paiment.*,devis.*')
-        ->where('client.nom LIKE', '%' . $keyword . '%')
+        ->select('client.*, facture.*, paiment.*, devis.*')
+        ->distinct() // Utilisez la méthode distinct() pour supprimer les doublons
+        ->like('client.nom', $keyword)
         ->orWhere('facture.id_facture', $keyword)
         ->orWhere("devis.total_ht", $keyword)
         ->orWhere('devis.total_ttc', $keyword)
         ->get()
         ->getResultArray();
-    if (!$result) {
-        echo "<script>alert('Recherche Introuvable');location.href = '/facture';</script>";
+        if (!$result) {
+            echo "<script>alert('Recherche Introuvable');location.href = '/facture';</script>";
+        }
+        // pass the result data to the view for display
+        return view('factures/pages/search', ['result' => $result]);
     }
-    // pass the result data to the view for display
-    return view('factures/pages/search', ['result' => $result]);
-}
 
-public function searchByDate()
-{
-    $date = $this->request->getVar('dateSearch'); // get the input date from the form
 
-    // extract the year and month from the input date
-    $year = date('Y', strtotime($date));
-    $month = date('m', strtotime($date));
+    public function searchByDate()
+    {
+        $date = $this->request->getVar('dateSearch'); // get the input date from the form
 
-    $db = db_connect();
-    // perform a join query between the `Client`, `Facture`, and `Paiment` tables
-    $result = $db->table('client')
-        ->join('facture', 'facture.id_client = client.id_client')
-        ->join('paiment', 'paiment.id_facture = facture.id_facture')
-        ->join('devis', 'client.id_client = devis.id_client')
-        ->select('client.*, facture.*, paiment.*,devis.*')
-        ->where("DATE_FORMAT(devis.date_saisie, '%Y-%m') =", "$year-$month")
-        ->get()
-        ->getResultArray();
-    if (!$result) {
-        echo "<script>alert('Recherche Introuvable');location.href = '/facture';</script>";
+        // extract the year and month from the input date
+        $year = date('Y', strtotime($date));
+        $month = date('m', strtotime($date));
+
+        $db = db_connect();
+        // perform a join query between the `Client`, `Facture`, and `Paiment` tables
+        $result = $db->table('client')
+            ->join('facture', 'facture.id_client = client.id_client')
+            ->join('paiment', 'paiment.id_facture = facture.id_facture')
+            ->join('devis', 'client.id_client = devis.id_client')
+            ->select('client.*, facture.*, paiment.*,devis.*')
+            ->where("DATE_FORMAT(devis.date_saisie, '%Y-%m') =", "$year-$month")
+            ->get()
+            ->getResultArray();
+        if (!$result) {
+            echo "<script>alert('Recherche Introuvable');location.href = '/facture';</script>";
+        }
+        // pass the result data to the view for display
+        return view('factures/pages/search', ['result' => $result]);
     }
-    // pass the result data to the view for display
-    return view('factures/pages/search', ['result' => $result]);
-}
-
-    public function editFacture($id_client , $id_devis){
+    public function editFacture($id_client, $id_devis)
+    {
         // creating new objects from the models
         $modelClient = new Client();
         $facture_model = new Facture();
@@ -133,11 +132,11 @@ public function searchByDate()
         $modelDevis = new DevisModel;
         $modelservice = new ServiceModel;
         $ligneCommande = new LigneCommandeModel;
-        
+
 
         $client = $modelClient->find($id_client);
-        $facture = $facture_model->where('id_client',$id_client)->first();
-        $paiment = $paimet_model->join('facture','facture.id_facture = paiment.id_facture')->where('facture.id_client', $id_client)->first();
+        $facture = $facture_model->where('id_client', $id_client)->first();
+        $paiment = $paimet_model->join('facture', 'facture.id_facture = paiment.id_facture')->where('facture.id_client', $id_client)->first();
         $devis = $modelDevis->find($id_devis);
         $service = $modelservice->join('lignecommande', 'lignecommande.id_service = service.id_service')->where('lignecommande.id_devis', $id_devis)->first();
         $commande = $ligneCommande->where('id_devis', $id_devis)->first();
@@ -149,9 +148,10 @@ public function searchByDate()
             'service' => $service,
             'commande' => $commande
         ];
-        return view('factures/pages/editFacture',$data);
+        return view('factures/pages/editFacture', $data);
     }
-    public function updateFacture($id_facture){
+    public function updateFacture($id_facture)
+    {
         // creating new objects from the models
         $facture_model = new Facture();
         $paimet_model = new Paiment();
@@ -172,43 +172,53 @@ public function searchByDate()
         $session->setFlashdata('success', 'Données Modifiées avec succès.');
         return redirect()->to('/facture');
     }
-    public function generatedId($date_saisie){
+    public function generatedId($date_saisie)
+    {
         $model = new Facture();
         $id_facture = $model->generate_id_facture($date_saisie);
         return $this->response->setJSON(['id_facture' => $id_facture])->setContentType('application/json');
     }
 
-    public function generatePdfForFacture($id_devis){
-        $devismodel = new DevisModel();
-        $modelservice = new ServiceModel();
-        $modelClient = new Client();
-        $ligneCommande = new LigneCommandeModel();
-        $factureModel = new Facture();
 
-        $devis = $devismodel->find($id_devis);
-        $service = $modelservice->join('lignecommande', 'lignecommande.id_service = service.id_service')->where('lignecommande.id_devis', $id_devis)->first();
-        $client = $modelClient->find($devis['id_client']);
-        $facture = $factureModel->join('client' , 'client.id_client = facture.id_client')->join('devis' , 'devis.id_client = client.id_client')->where('devis.id_devis',$id_devis)->first();
-        $commande = $ligneCommande->where('id_devis', $id_devis)->first();
-        $data = [
-            'devis' => $devis,
-            'service' => $service,
-            'client' => $client,
-            'commande' => $commande,
-            'facture' => $facture
-        ];
+ 
 
-        // Load the dompdf library
-        $pdf = new Dompdf();
-        // Generate the HTML for the PDF
-        $html = view('facture_pdf', $data);
+    public function listFct($id_facture)
+{
+    $devismodel = new DevisModel();
+    $modelservice = new ServiceModel();
+    $modelClient = new Client();
+    $lignecommande = new LigneCommandeModel();
 
-        // Generate the PDF
-        $pdf->loadHtml($html);
-        $pdf->setPaper('A4', 'portrait');
-        $pdf->render();
+    // Récupérer l'id_client à partir de la table facture
+    $facturemodel = new Facture();
+    $factureData = $facturemodel->find($id_facture);
+    $id_client = $factureData['id_client'];
 
-        // Output the PDF to the browser
-        $pdf->stream('facture.pdf', ['Attachment' => false]);
-    }
+    // Modifier la requête pour sélectionner en utilisant id_client
+    $lignecomm = $lignecommande->join("service", 'service.id_service = lignecommande.id_service')
+                               ->select("service.*,lignecommande.*")
+                               ->where('id_devis', function ($builder) use ($id_client) {
+                                   $builder->select('id_devis')
+                                           ->from('devis')
+                                           ->where('id_client', $id_client);
+                               })
+                               ->get()
+                               ->getResultArray();
+
+    $devis = $devismodel->find($id_facture);
+    $service = $modelservice->join('lignecommande', 'lignecommande.id_service = service.id_service')
+                            ->join('devis', 'devis.id_devis = lignecommande.id_devis')
+                            ->where('devis.id_devis', $id_facture)
+                            ->first();
+    $client = $modelClient->find($devis['id_client']);
+
+    $data = [
+        'devis' => $devis,
+        'service' => $service,
+        'client' => $client,
+        'lignecommande' => $lignecomm
+    ];
+    return view('factures/pages/affichageFct', $data);
+}
+
 }

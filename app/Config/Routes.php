@@ -105,9 +105,10 @@ $routes->get('/tablesRelance' , 'RelanceController::Relance');
 $routes->post('/client/updateRelancement/(:segment)', 'RelanceController::updateRelancement/$1');
 
 // route pour supprimer une Facture
-$routes->get('/deleteFacture/(:segment)', 'CreatingController::delete_row/$1');
+$routes->get('deleteFacture/(:segment)', 'CreatingController::delete_row/$1');
 
-//route pour avoir les pages des devis
+
+//route pour voir les pages des devis
 $routes->get('devis','DevisController::liste');
 
 // route pour creer un nouveau devis
@@ -123,18 +124,18 @@ $routes->get('/Controllers/DevisController/generatedIdDevis/(:segment)','DevisCo
 $routes->post('/storeDevis','DevisController::storeDevis');
 
 // route pour rechercher par Nom client , Numero devis...
-$routes->match(['get', 'post'], 'searchDevis', 'DevisController::searchs');
+$routes->match(['get', 'post'], 'searchDevis', 'DevisController::searchs1');
 
 // route pour rechercher par Nom client , Numero devis...
-$routes->match(['get', 'post'], 'searchDevisByDate', 'DevisController::searchByDates');
+$routes->match(['get', 'post'], 'searchDevisByDate', 'DevisController::searchByDates1');
 
 // route pour supprimer un devis
 $routes->get('/devisdelete/(:segment)','DevisController::delete/$1');
 
-// route pour voir le ligne à modifier
+// route pour voir la ligne à modifier
 $routes->get('/modifierdevis/(:segment)','DevisController::edit/$1');
 
-// route pour sauvgarder la modification de ce ligne
+// route pour sauvgarder la modification de cette ligne
 $routes->post('/devisUpdate/(:num)/(:segment)','DevisController::update/$1/$2');
 
 // route pour creer un nouveau client
@@ -150,10 +151,11 @@ $routes->get('/listeClient','AddClientController::liste');
 $routes->get('/modifierclient/(:num)','AddClientController::edit/$1');
 
 // route pour sauvgarder les nouveau modification sur un client
-$routes->post('/clientupdate/(:num)','AddClientController::update/$1');
+$routes->post('update/(:num)','AddClientController::update/$1');
 
-// route pour spprimer le client selectionner
-$routes->get('/clientdelete/(:num)','AddClientController::delete/$1');
+//supprimer client
+$routes->get('clientdelete/(:num)','AddClientController::delete/$1');
+$routes->match(['get', 'post'], 'searchclient', 'AddClientController::searchClient');
 
 // route pour creer un nouveau service
 $routes->get('/createService','ServiceController::index');
@@ -164,17 +166,23 @@ $routes->post('/Servicestore','ServiceController::store');
 // route pour afficher la liste des service
 $routes->get('/listeService','ServiceController::liste');
 
-// route rediger vers la page modifierSrvice pour modifier un service
-$routes->get('/modifierservice/(:num)','ServiceController::edit/$1');
+// modifier un service
+$routes->get('modifierservice/(:num)','ServiceController::edit/$1');
 
 // route pour sauvgarder les modification d'un service
-$routes->post('/updateService/(:num)','ServiceController::update/$1');
+$routes->post('service/update/(:num)','ServiceController::update/$1');
 
-// route pour telecharger PDF pour le Devis selectionner
-$routes->get('generate-pdf-line/(:segment)', 'DevisController::generatePdfForLine/$1');
+// $routes->get('devis/listerdevis','DevisController::showdevis');
+// $routes->get('listerdevis','DevisController::liste');
+$routes->get('dash','DevisController::dash');
+// afficher devis
+$routes->get('devis/affichage/(:segment)','DevisController::list/$1');
+//afficher facture
+$routes->get('factures/affichageFct/(:segment)','FactureController::listFct/$1');
 
-// route pour telecharger PDF pour la Facture selectionner
-$routes->get('generate-pdf-facture/(:segment)', 'FactureController::generatePdfForFacture/$1');
+//autres affichage avec pour le print
+$routes->get('devis/affichage2','DevisController::affichage2');
+$routes->get('devis/affichage2/(:segment)','DevisController::list2/$1');
 
-// route pour rechercher a un client
-$routes->post('/searchClient','AddClientController::searchClient');
+
+

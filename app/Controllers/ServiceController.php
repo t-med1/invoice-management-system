@@ -24,8 +24,7 @@ class ServiceController extends BaseController
             'prix_unitaire'=> $this->request->getVar('prix_unitaire'),
        ];
          $modelService->insert($data);
-        $session = session();
-        $session->setFlashdata('success', 'Données Ajoutée avec succès.');
+        
         return view('devis/listeservice',['liste' =>$modelService ->findAll()]);
     }
 
@@ -53,8 +52,6 @@ class ServiceController extends BaseController
             'prix_unitaire'=> $this->request->getVar('prix_unitaire'),
        ];
        $modelService->update($id , $data);
-       $session = session();
-       $session->setFlashdata('success', 'Données Modifiées avec succès.');
        return redirect()->to('/listeService');
     }
 }

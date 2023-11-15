@@ -1,225 +1,50 @@
-INFO - 2023-04-16 17:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-16 17:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-16 17:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-16 17:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-16 17:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-16 17:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-ERROR - 2023-04-16 17:39:46 --> mysqli_sql_exception: Table 'gestionfacture.clients' doesn't exist in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
-Stack trace:
-#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cli...', 0)
-#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cli...')
-#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cli...')
-#3 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(836): CodeIgniter\Database\BaseConnection->query('INSERT INTO cli...', Array)
-#4 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\AddClientController.php(35): CodeIgniter\Model->__call('query', Array)
-#5 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\AddClientController->store()
-#6 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
-#7 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#8 C:\xampp\htdocs\codeigniter\second_app\public\index.php(68): CodeIgniter\CodeIgniter->run()
-#9 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
-#10 {main}
-CRITICAL - 2023-04-16 17:39:46 --> Table 'gestionfacture.clients' doesn't exist
-in SYSTEMPATH\Database\BaseConnection.php on line 645.
- 1 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseConnection->query('INSERT INTO clients (ICE, nom, email_client, numero_telephone, adresse, ville, pays) VALUES (?, ?, ?, ?, ?, ?, ?)', [...])
- 2 APPPATH\Controllers\AddClientController.php(35): CodeIgniter\Model->__call('query', [...])
- 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->store()
- 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
- 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
- 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-ERROR - 2023-04-16 17:47:56 --> mysqli_sql_exception: Column 'montant_rest' cannot be null in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
-Stack trace:
-#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pa...', 0)
-#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
-#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
-#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
-#4 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\codeigniter\second_app\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\DevisController.php(51): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
-#9 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
-#10 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\codeigniter\second_app\public\index.php(68): CodeIgniter\CodeIgniter->run()
-#12 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
-#13 {main}
-CRITICAL - 2023-04-16 17:47:56 --> Column 'montant_rest' cannot be null
-in SYSTEMPATH\Database\BaseConnection.php on line 645.
- 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paiment` (`montant_paye`, `montant_rest`, `date_dernier_paiment`, `status`, `status_litige`, `status_paiment`) VALUES (:montant_paye:, :montant_rest:, :date_dernier_paiment:, :status:, :status_litige:, :status_paiment:)', [...], false)
- 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
- 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
- 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
- 5 APPPATH\Controllers\DevisController.php(51): CodeIgniter\Model->insert([...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-ERROR - 2023-04-16 17:51:08 --> mysqli_sql_exception: Column 'modalite_paiement' cannot be null in C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php:295
-Stack trace:
-#0 C:\xampp\htdocs\codeigniter\second_app\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `de...', 0)
-#1 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
-#2 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
-#3 C:\xampp\htdocs\codeigniter\second_app\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
-#4 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\codeigniter\second_app\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\codeigniter\second_app\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\codeigniter\second_app\app\Controllers\DevisController.php(40): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
-#9 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
-#10 C:\xampp\htdocs\codeigniter\second_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\codeigniter\second_app\public\index.php(68): CodeIgniter\CodeIgniter->run()
-#12 C:\xampp\htdocs\codeigniter\second_app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
-#13 {main}
-CRITICAL - 2023-04-16 17:51:08 --> Column 'modalite_paiement' cannot be null
-in SYSTEMPATH\Database\BaseConnection.php on line 645.
- 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `devis` (`id_devis`, `id_client`, `date_saisie`, `total_ht`, `total_ttc`, `modalite_paiement`, `etat`) VALUES (:id_devis:, :id_client:, :date_saisie:, :total_ht:, :total_ttc:, :modalite_paiement:, :etat:)', [...], false)
- 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
- 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
- 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
- 5 APPPATH\Controllers\DevisController.php(40): CodeIgniter\Model->insert([...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 17:52:42 --> Undefined array key 1
-in APPPATH\Controllers\DevisController.php on line 57.
- 1 APPPATH\Controllers\DevisController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\DevisController.php', 57)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 18:10:09 --> Undefined variable $pdo
-in APPPATH\Controllers\DevisController.php on line 66.
- 1 APPPATH\Controllers\DevisController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pdo', 'APPPATH\\Controllers\\DevisController.php', 66)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 18:12:13 --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'descriptif' in 'field list'
-in APPPATH\Controllers\DevisController.php on line 78.
- 1 APPPATH\Controllers\DevisController.php(78): PDOStatement->execute()
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 18:13:53 --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'descriptif_devis' in 'field list'
-in APPPATH\Controllers\DevisController.php on line 75.
- 1 APPPATH\Controllers\DevisController.php(75): PDOStatement->execute()
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 18:15:48 --> Undefined array key 1
-in APPPATH\Controllers\DevisController.php on line 63.
- 1 APPPATH\Controllers\DevisController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\DevisController.php', 63)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-16 22:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-16 22:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-16 22:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-16 22:48:59 --> Undefined array key "titre"
-in APPPATH\Views\devis\listerdevis.php on line 42.
- 1 APPPATH\Views\devis\listerdevis.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titre"', 'APPPATH\\Views\\devis\\listerdevis.php', 42)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
- 5 APPPATH\Controllers\DevisController.php(112): view('devis/listerdevis', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 22:52:16 --> Undefined array key "titre"
-in APPPATH\Views\devis\listerdevis.php on line 42.
- 1 APPPATH\Views\devis\listerdevis.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titre"', 'APPPATH\\Views\\devis\\listerdevis.php', 42)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
- 5 APPPATH\Controllers\DevisController.php(112): view('devis/listerdevis', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 22:53:27 --> Undefined array key "prenom"
-in APPPATH\Views\devis\modifierdevis.php on line 39.
- 1 APPPATH\Views\devis\modifierdevis.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\modifierdevis.php', 39)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
- 5 APPPATH\Controllers\DevisController.php(207): view('devis/modifierdevis', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('04-004')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-16 23:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-16 23:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-16 23:55:52 --> Undefined variable $service
-in APPPATH\Views\devis\modifierdevis.php on line 15.
- 1 APPPATH\Views\devis\modifierdevis.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service', 'APPPATH\\Views\\devis\\modifierdevis.php', 15)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
- 5 APPPATH\Controllers\DevisController.php(207): view('devis/modifierdevis', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('04-004')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 23:57:24 --> Undefined variable $service
-in APPPATH\Views\devis\modifierdevis.php on line 15.
- 1 APPPATH\Views\devis\modifierdevis.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service', 'APPPATH\\Views\\devis\\modifierdevis.php', 15)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
- 5 APPPATH\Controllers\DevisController.php(207): view('devis/modifierdevis', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('04-004')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 23:57:50 --> Undefined variable $service
-in APPPATH\Views\devis\modifierdevis.php on line 15.
- 1 APPPATH\Views\devis\modifierdevis.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service', 'APPPATH\\Views\\devis\\modifierdevis.php', 15)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
- 5 APPPATH\Controllers\DevisController.php(207): view('devis/modifierdevis', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('04-004')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 23:58:03 --> Undefined array key "ICE"
-in APPPATH\Views\devis\modifierdevis.php on line 25.
- 1 APPPATH\Views\devis\modifierdevis.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ICE"', 'APPPATH\\Views\\devis\\modifierdevis.php', 25)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
- 5 APPPATH\Controllers\DevisController.php(207): view('devis/modifierdevis', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('04-004')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-16 23:59:32 --> Undefined array key "ICE"
-in APPPATH\Views\devis\modifierdevis.php on line 25.
- 1 APPPATH\Views\devis\modifierdevis.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ICE"', 'APPPATH\\Views\\devis\\modifierdevis.php', 25)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
- 5 APPPATH\Controllers\DevisController.php(208): view('devis/modifierdevis', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('04-004')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-16 11:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 11:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-16 12:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -55,7 +55,7 @@
     height: 250%;
 }
 .details-container p {
-    font-size: 0.9vw;
+    font-size: 1.2vw;
 }
 .details {
     display: flex;
@@ -67,7 +67,6 @@
 .details p {
     width: 14%;
     text-align: center;
-    font-size: 0.9vw;
 }
 
 .details p:nth-child(2) {
@@ -88,7 +87,6 @@
 .bottom p {
     position: absolute;
     text-align: center;
-    font-size: 0.9vw;
 }
 
 .sous-total{

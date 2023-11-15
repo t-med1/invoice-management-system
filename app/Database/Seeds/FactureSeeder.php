@@ -11,22 +11,22 @@ class FactureSeeder extends Seeder
         // add the initial informations
         $data = [
             [
-                'id_facture' => '04-001',
-                'id_client' => 1,
-                'date_saisie' => '2020-04-02',
-                'date_emission' => '2020-04-02',
+                'id_facture' => '03-001',
+                'id_paiment' => 1,
+                'id_client' => null,
+                'date_saisie' => '2020-03-02',
+                'date_emission' => '2020-03-02',
                 'date_apres_emission' => 5,
-                'date_echeance' => '2020-04-12',
-                'relance_faite' => false
+                'date_echeance' => '2020-03-12',
             ],
             [
-                'id_facture' => '04-002',
+                'id_facture' => '03-002',
+                'id_paiment' => 2,
                 'id_client' => 2,
-                'date_saisie' => '2020-04-05',
-                'date_emission' => '2020-04-05',
-                'date_apres_emission' => 3,
-                'date_echeance' => '2020-04-15',
-                'relance_faite' => true
+                'date_saisie' => '2020-03-05',
+                'date_emission' => '2020-03-05',
+                'date_apres_emission' => '',
+                'date_echeance' => '2020-03-15',
             ]
         ];
 

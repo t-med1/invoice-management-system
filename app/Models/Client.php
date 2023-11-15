@@ -14,7 +14,7 @@ class Client extends Model
     protected $returnType = 'array';
     protected $useSoftDeletes = false;
     protected $protectFields = true;
-    protected $allowedFields = ['ICE','nom', 'email_client', 'numero_telephone','ville','pays','adresse'];
+    protected $allowedFields = ['id_client','ICE','nom','numero_telephone','email_client','adresse','ville','pays'];
 
 
     // Validation

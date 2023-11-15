@@ -11,20 +11,20 @@ class ClientSeeder extends Seeder
         // add the initial informations
         $data = [
             [
-                'ICE' =>504246878,
-                'nom' => 'Hotel Sahrai',
-                'email_client' => 'sahrai.hotel@gmail.com',
-                'numero_telephone' => '0520963627',
-                'adresse' => 'bab el ghoul fès',
+                'id_client' =>1,
+                'nom' => 'Telaj',
+                'prenom' => 'Mohammed',
+                'email_client' => 'med.telaj404@gmail.com',
+                'numero_telephone' => '0620963627',
                 'ville' => 'FES',
                 'pays' => 'Maroc'
             ],
             [
-                'ICE' => null,
-                'nom' => 'Alaoui Mehdi',
+                'id_client' => 2,
+                'nom' => 'Alaoui',
+                'prenom' => 'Mehdi',
                 'email_client' => 'alaoui.mehdi@gmail.com',
                 'numero_telephone' => '0729105673',
-                'adresse' => 'Hay Riad Rue3 ',
                 'ville' => 'Rabat',
                 'pays' => 'Maroc',
             ]

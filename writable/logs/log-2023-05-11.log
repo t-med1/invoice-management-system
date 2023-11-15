@@ -1,0 +1,126 @@
+INFO - 2023-05-11 17:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-11 17:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-11 19:53:15 --> Undefined variable $client
+in APPPATH\Views\devis\listerdevis.php on line 253.
+ 1 APPPATH\Views\devis\listerdevis.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $client', 'APPPATH\\Views\\devis\\listerdevis.php', 253)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(116): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 19:54:17 --> Undefined variable $devis
+in APPPATH\Views\devis\listerdevis.php on line 258.
+ 1 APPPATH\Views\devis\listerdevis.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $devis', 'APPPATH\\Views\\devis\\listerdevis.php', 258)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(116): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:06:00 --> Undefined variable $lignecommande
+in APPPATH\Views\devis\listerdevis.php on line 263.
+ 1 APPPATH\Views\devis\listerdevis.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lignecommande', 'APPPATH\\Views\\devis\\listerdevis.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(116): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:23:18 --> Undefined variable $id_devis
+in APPPATH\Controllers\DevisController.php on line 88.
+ 1 APPPATH\Controllers\DevisController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_devis', 'APPPATH\\Controllers\\DevisController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:23:34 --> Undefined variable $lignecommande
+in APPPATH\Views\devis\listerdevis.php on line 263.
+ 1 APPPATH\Views\devis\listerdevis.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lignecommande', 'APPPATH\\Views\\devis\\listerdevis.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(117): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:30:41 --> Undefined variable $id_devis
+in APPPATH\Controllers\DevisController.php on line 88.
+ 1 APPPATH\Controllers\DevisController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_devis', 'APPPATH\\Controllers\\DevisController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:36:55 --> Undefined variable $lignecommande
+in APPPATH\Views\devis\listerdevis.php on line 263.
+ 1 APPPATH\Views\devis\listerdevis.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lignecommande', 'APPPATH\\Views\\devis\\listerdevis.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(118): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:42:13 --> Undefined variable $lignecommande
+in APPPATH\Views\devis\listerdevis.php on line 263.
+ 1 APPPATH\Views\devis\listerdevis.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lignecommande', 'APPPATH\\Views\\devis\\listerdevis.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(118): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:44:36 --> Undefined variable $lignecommande
+in APPPATH\Views\devis\listerdevis.php on line 263.
+ 1 APPPATH\Views\devis\listerdevis.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lignecommande', 'APPPATH\\Views\\devis\\listerdevis.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(118): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:48:35 --> Undefined variable $devis
+in APPPATH\Views\devis\listerdevis.php on line 272.
+ 1 APPPATH\Views\devis\listerdevis.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $devis', 'APPPATH\\Views\\devis\\listerdevis.php', 272)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(118): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 20:49:26 --> Undefined variable $devis
+in APPPATH\Views\devis\listerdevis.php on line 272.
+ 1 APPPATH\Views\devis\listerdevis.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $devis', 'APPPATH\\Views\\devis\\listerdevis.php', 272)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(118): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

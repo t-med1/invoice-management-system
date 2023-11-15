@@ -15,7 +15,7 @@ class Facture extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_facture','id_client','ICE','date_saisie','date_emission','date_echeance','relance_faite'];
+    protected $allowedFields    = ['id_facture','id_client','date_saisie','date_emission','date_echeance'];
 
 
     // Validation
@@ -71,9 +71,5 @@ class Facture extends Model
   
       return $data;
   }
-      // pour modifier le champs du relancement
-      public function updateRelancement($id_facture, $relance_faite)
-      {
-          $this->where('id_facture', $id_facture)->set(['relance_faite' => $relance_faite])->update();
-      }
+  
 }

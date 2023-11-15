@@ -1,8 +1,115 @@
-INFO - 2023-04-05 08:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-05 08:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-05 08:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-05 08:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-05 08:50:24 --> Undefined variable $fcture
+INFO - 2023-04-05 01:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 01:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 09:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 12:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 13:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-05 14:14:15 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'suivifacture', 3306, '', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`...', Array, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\DevisController.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`...', Array, false)
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\DevisController.php(85): CodeIgniter\Model->__call('get', Array)
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#10 {main}
+CRITICAL - 2023-04-05 14:14:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`.*, `devis`.*, `service`.*, `lignecommande`.*
+FROM `client`
+JOIN `devis` ON `devis`.`id_client` = `client`.`id_client`
+JOIN `lignecommande` ON `devis`.`id_devis` = `lignecommande`.`id_devis`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+ORDER BY `devis`.`date_saisie` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\DevisController.php(85): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 14:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-05 14:47:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2) NOT NULL,
+	`qte_commande` INT(5) NOT NULL,
+	CONSTRAINT `pk_lignecommande` PRI' at line 5 in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `l...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `l...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `l...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `l...')
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Database\Migrations\2023-03-27-233934_LigneCommande.php(41): CodeIgniter\Database\Forge->createTable('lignecommande')
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MigrationRunner.php(877): App\Database\Migrations\LigneCommande->up()
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-04-05 14:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 14:51:02 --> Undefined variable $fcture
 in APPPATH\Controllers\FactureController.php on line 52.
  1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
@@ -10,8 +117,23 @@ in APPPATH\Controllers\FactureController.php on line 52.
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-05 08:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-05 08:53:04 --> Undefined variable $fcture
+ERROR - 2023-04-05 14:51:16 --> mysqli_sql_exception: Duplicate entry '03-001' for key 'PRIMARY' in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', NULL, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Database\Seeds\FactureSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\Seeder.php(146): App\Database\Seeds\FactureSeeder->run()
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-04-05 14:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 14:52:50 --> Undefined variable $fcture
 in APPPATH\Controllers\FactureController.php on line 52.
  1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
@@ -19,8 +141,10 @@ in APPPATH\Controllers\FactureController.php on line 52.
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-05 08:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-05 08:58:05 --> Undefined variable $fcture
+INFO - 2023-04-05 14:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 14:53:07 --> Undefined variable $fcture
 in APPPATH\Controllers\FactureController.php on line 52.
  1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
@@ -28,10 +152,8 @@ in APPPATH\Controllers\FactureController.php on line 52.
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-05 09:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-05 09:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-05 09:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-05 09:05:32 --> Undefined variable $fcture
+INFO - 2023-04-05 14:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 14:55:11 --> Undefined variable $fcture
 in APPPATH\Controllers\FactureController.php on line 52.
  1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
@@ -39,64 +161,353 @@ in APPPATH\Controllers\FactureController.php on line 52.
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-05 09:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-05 09:06:41 --> Undefined variable $fcture
-in APPPATH\Controllers\FactureController.php on line 51.
- 1 APPPATH\Controllers\FactureController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 51)
+INFO - 2023-04-05 14:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 14:55:13 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 52.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-05 09:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-05 09:07:01 --> Undefined variable $fcture
-in APPPATH\Controllers\FactureController.php on line 54.
- 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+INFO - 2023-04-05 14:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 14:55:15 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 52.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-05 09:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-05 09:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-05 09:09:48 --> Undefined variable $fcture
-in APPPATH\Controllers\FactureController.php on line 50.
- 1 APPPATH\Controllers\FactureController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 50)
+INFO - 2023-04-05 14:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 14:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 14:56:52 --> Undefined variable $liste
+in APPPATH\Views\devis\listeservice.php on line 115.
+ 1 APPPATH\Views\devis\listeservice.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liste', 'APPPATH\\Views\\devis\\listeservice.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listeservice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listeservice', [], true)
+ 5 APPPATH\Controllers\ServiceController.php(28): view('devis/listeservice')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ServiceController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 14:57:07 --> Undefined variable $liste
+in APPPATH\Views\devis\listeservice.php on line 115.
+ 1 APPPATH\Views\devis\listeservice.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liste', 'APPPATH\\Views\\devis\\listeservice.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listeservice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listeservice', [], true)
+ 5 APPPATH\Controllers\ServiceController.php(28): view('devis/listeservice')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ServiceController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 14:58:58 --> Undefined variable $liste
+in APPPATH\Views\devis\listeservice.php on line 115.
+ 1 APPPATH\Views\devis\listeservice.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liste', 'APPPATH\\Views\\devis\\listeservice.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listeservice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listeservice', [], true)
+ 5 APPPATH\Controllers\ServiceController.php(28): view('devis/listeservice')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ServiceController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 15:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 15:02:07 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 52.
+ 1 APPPATH\Controllers\FactureController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 52)
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-INFO - 2023-04-05 09:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-05 09:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-05 09:32:43 --> Undefined variable $fcture
-in APPPATH\Controllers\FactureController.php on line 53.
- 1 APPPATH\Controllers\FactureController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 53)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-05 09:32:52 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\DevisController.php on line 190.
- 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+INFO - 2023-04-05 15:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 15:03:47 --> Undefined variable $liste
+in APPPATH\Views\devis\listeservice.php on line 115.
+ 1 APPPATH\Views\devis\listeservice.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liste', 'APPPATH\\Views\\devis\\listeservice.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listeservice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listeservice', [], true)
+ 5 APPPATH\Controllers\ServiceController.php(28): view('devis/listeservice')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ServiceController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-05 15:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 15:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 16:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 16:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 16:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 17:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 17:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 17:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 17:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 17:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 17:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 17:48:43 --> Undefined variable $liste_devis
+in APPPATH\Views\devis\affichage.php on line 137.
+ 1 APPPATH\Views\devis\affichage.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liste_devis', 'APPPATH\\Views\\devis\\affichage.php', 137)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\affichage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/affichage', [], true)
+ 5 APPPATH\Controllers\DevisController.php(272): view('devis/affichage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->list('04-003')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 18:15:18 --> Undefined variable $i
+in APPPATH\Views\devis\affichage.php on line 131.
+ 1 APPPATH\Views\devis\affichage.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH\\Views\\devis\\affichage.php', 131)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\affichage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/affichage', [], true)
+ 5 APPPATH\Controllers\DevisController.php(272): view('devis/affichage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->list('04-003')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 18:15:43 --> Undefined variable $i
+in APPPATH\Views\devis\affichage.php on line 135.
+ 1 APPPATH\Views\devis\affichage.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH\\Views\\devis\\affichage.php', 135)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\affichage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/affichage', [], true)
+ 5 APPPATH\Controllers\DevisController.php(272): view('devis/affichage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->list('04-003')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 18:34:17 --> Undefined variable $list
+in APPPATH\Views\devis\affichage.php on line 128.
+ 1 APPPATH\Views\devis\affichage.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'APPPATH\\Views\\devis\\affichage.php', 128)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\affichage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/affichage', [], true)
+ 5 APPPATH\Controllers\DevisController.php(272): view('devis/affichage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->list('04-003')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 18:48:22 --> Undefined variable $sr
+in APPPATH\Views\devis\affichage.php on line 125.
+ 1 APPPATH\Views\devis\affichage.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sr', 'APPPATH\\Views\\devis\\affichage.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\affichage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/affichage', [], true)
+ 5 APPPATH\Controllers\DevisController.php(272): view('devis/affichage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->list('04-003')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 22:44:27 --> Undefined variable $descs
+in APPPATH\Controllers\DevisController.php on line 266.
+ 1 APPPATH\Controllers\DevisController.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $descs', 'APPPATH\\Controllers\\DevisController.php', 266)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->list('04-004')
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-05 10:16:55 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\DevisController.php on line 190.
- 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-05 22:05:12 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\DevisController.php on line 190.
- 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+CRITICAL - 2023-04-05 22:44:44 --> Undefined variable $descs
+in APPPATH\Views\devis\listerdevis.php on line 143.
+ 1 APPPATH\Views\devis\listerdevis.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $descs', 'APPPATH\\Views\\devis\\listerdevis.php', 143)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(111): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 22:48:14 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\DevisController.php on line 262.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\DevisController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DevisController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DevisController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\DevisController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 22:57:04 --> Undefined array key "infos"
+in APPPATH\Views\devis\listerdevis.php on line 143.
+ 1 APPPATH\Views\devis\listerdevis.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "infos"', 'APPPATH\\Views\\devis\\listerdevis.php', 143)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(111): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 23:07:09 --> mysqli_sql_exception: Not unique table/alias: 'service' in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `service...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `service...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `service...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service...', Array, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#11 {main}
+CRITICAL - 2023-04-05 23:07:09 --> Not unique table/alias: 'service'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service`.`titre`, `lignecommande`.`description_service`
+FROM `service`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `service`.`id_devis` = :service.id_devis:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 23:07:34 --> mysqli_sql_exception: Not unique table/alias: 'service' in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `service...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `service...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `service...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service...', Array, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#11 {main}
+CRITICAL - 2023-04-05 23:07:34 --> Not unique table/alias: 'service'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service`.`titre`, `lignecommande`.`description_service`
+FROM `service`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `service`.`id_devis` = :service.id_devis:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 23:08:14 --> mysqli_sql_exception: Not unique table/alias: 'service' in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `service...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `service...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `service...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service...', Array, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#11 {main}
+CRITICAL - 2023-04-05 23:08:14 --> Not unique table/alias: 'service'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service`.`titre`, `lignecommande`.`description_service`
+FROM `service`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `lignecommande`.`id_devis` = :lignecommande.id_devis:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 23:08:15 --> mysqli_sql_exception: Not unique table/alias: 'service' in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `service...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `service...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `service...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service...', Array, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#11 {main}
+CRITICAL - 2023-04-05 23:08:15 --> Not unique table/alias: 'service'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service`.`titre`, `lignecommande`.`description_service`
+FROM `service`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `lignecommande`.`id_devis` = :lignecommande.id_devis:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 23:08:21 --> mysqli_sql_exception: Not unique table/alias: 'service' in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `service...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `service...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `service...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service...', Array, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#11 {main}
+CRITICAL - 2023-04-05 23:08:21 --> Not unique table/alias: 'service'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `service`.`titre`, `lignecommande`.`description_service`
+FROM `service`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `lignecommande`.`id_devis` = :lignecommande.id_devis:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(97): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 23:19:56 --> Undefined array key "qte_commande"
+in APPPATH\Controllers\DevisController.php on line 106.
+ 1 APPPATH\Controllers\DevisController.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "qte_commande"', 'APPPATH\\Controllers\\DevisController.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

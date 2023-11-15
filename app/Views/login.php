@@ -10,13 +10,14 @@
     <title>Login - Page</title>
   </head>
   <body>
-    <div class="container">
-      <?php if (session()->getFlashdata('error')): ?>
-        <div class="alert alert-danger container" id="myDiv">
-            <?= session()->getFlashdata('error') ?>
-        </div>
-      <?php endif; ?>
-    </div>
+    <?php if(session()->getFlashdata('error')): ?>
+        <script>alert('<?= session()->getFlashdata('error') ?>')</script>
+    <?php endif; ?>
+    <?php if (isset($validation)) : ?>
+          <div class="alert alert-danger fixed-top container text-center w-25 px-5">
+                <?= $validation ?>
+          </div>
+        <?php endif; ?>
     <section>
     <div class="form-box">
         <div class="form-value">
@@ -41,15 +42,10 @@
         </div>
       </div>
     </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            setTimeout(function() {
-                $('#myDiv').slideUp();
-            }, 1100);
-        });
-    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

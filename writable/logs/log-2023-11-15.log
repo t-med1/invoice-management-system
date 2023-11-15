@@ -1,0 +1,17 @@
+INFO - 2023-11-15 00:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-15 00:38:38 --> mysqli_sql_exception: Table 'gestionfacture.migrations' doesn't exist in engine in C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\Database\MigrationRunner.php(662): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->getHistory('')
+#6 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\lenovo\Desktop\Gestion Devis et Factures\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\lenovo\Desktop\Gestion Devis et Factures\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+INFO - 2023-11-15 00:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 00:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-15 00:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

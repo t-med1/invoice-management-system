@@ -4,10 +4,10 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\Client;
-use App\Models\DevisModel;
-use App\Models\Facture;
-use App\Models\LigneCommandeModel;
 use App\Models\Paiment;
+use App\Models\LigneCommandeModel;
+use App\Models\Facture;
+use App\Models\DevisModel;
 use App\Models\Relancement;
 
 class AddClientController extends BaseController
@@ -22,17 +22,16 @@ class AddClientController extends BaseController
         $modelClient = new Client;
 
         $data =[
+            
             'ICE'=> $this->request->getVar('ICE'),
             'nom'=> $this->request->getVar('nom'),
             'email_client'=> $this->request->getVar('email_client'),
             'numero_telephone'=> $this->request->getVar('numero_telephone'),
-            'adresse'=> $this->request->getVar('adresse'),
             'ville'=> $this->request->getVar('ville'),
             'pays'=> $this->request->getVar('pays'),
-        ];
+            'adresse'=> $this->request->getVar('adresse'),
+       ];
         $modelClient->insert($data);
-        $session = session();
-        $session->setFlashdata('success', 'Client ajouté avec succè.');
         return redirect()->to('/listeClient');
     }
 
@@ -60,7 +59,6 @@ class AddClientController extends BaseController
             'email_client'=> $this->request->getVar('email_client'),
             'numero_telephone'=> $this->request->getVar('numero_telephone'),
             'ville'=> $this->request->getVar('ville'),
-            'adresse'=> $this->request->getVar('adresse'),
             'pays'=> $this->request->getVar('pays'),
        ];
        $modelClient->update($id , $data);
@@ -73,6 +71,13 @@ class AddClientController extends BaseController
         $factureModel = new Facture();
         $paimentModel = new Paiment();
         $ligneCommandeModel = new LigneCommandeModel();
+        $relancementModel = new Relancement();
+    
+        // Supprimer toutes les références dans la table relancement
+        $relancements = $relancementModel->where('id_client', $id_client)->get()->getResultArray();
+        foreach ($relancements as $relancement) {
+            $relancementModel->where('id_relance', $relancement['id_relance'])->delete();
+        }
     
         // Récupérer tous les devis associés au client
         $devis = $devisModel->where('id_client', $id_client)->get()->getResultArray();
@@ -94,26 +99,26 @@ class AddClientController extends BaseController
         $devisModel->where('id_client', $id_client)->delete();
         // Supprimer le client
         $clientModel->where('id_client', $id_client)->delete();
-        $session = session();
-        $session->setFlashdata('success', 'Donnés supprimées avec succè.');
+    
         return redirect()->to('listeClient');
     }
-    public function searchClient()
-    {
-        $keyword = $this->request->getVar('searchclient');
+    public function searchClient(){
+        $keyword = $this->request->getVar('searchclient'); 
 
         $modelClient = new Client;
         $clients = $modelClient
             ->select('client.*')
-            ->where('client.nom LIKE', '%' . $keyword . '%')
-            ->orWhere('client.ville LIKE', '%' . $keyword . '%')
+            ->where('client.nom', $keyword)
+            ->orWhere('client.ville', $keyword)
+            
             ->get()
             ->getResultArray();
 
-        if (!$clients) {
-            echo "<script>alert('Recherche Introuvable');location.href = '/listeClient';</script>";
-        }
+            if (!$clients ) {
+                echo "<script>alert('Recherche Introuvable');location.href = '/listeClient';</script>";
+            }
+            return view('devis/searchclient', ['clients' => $clients]);
 
-        return view('devis/searchClient', ['clients' => $clients]);
     }
+
 }

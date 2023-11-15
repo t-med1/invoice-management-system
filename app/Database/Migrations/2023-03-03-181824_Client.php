@@ -17,9 +17,9 @@ class Client extends Migration
                 'unsigned' => true,
             ],
             'ICE'=>[
-                'type' => 'INT',
-                'constraint' => 50,
-                'unsigned' => true,
+                'type' => 'VARCHAR',
+                'constraint' => 100,
+                'null' => false
             ],
             'nom'=>[
                 'type' => 'VARCHAR',

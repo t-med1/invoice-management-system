@@ -1,33 +1,841 @@
-INFO - 2023-04-06 13:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-04-06 13:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-04-06 13:52:31 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\DevisController.php on line 190.
- 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+INFO - 2023-04-06 01:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-06 01:19:20 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\AddClientController.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\AddClientController->store()
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#13 {main}
+CRITICAL - 2023-04-06 01:19:20 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `client` (`id_client`, `nom`, `prenom`, `email_client`, `numero_telephone`, `ville`, `pays`) VALUES (:id_client:, :nom:, :prenom:, :email_client:, :numero_telephone:, :ville:, :pays:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AddClientController.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 01:28:50 --> Undefined array key "prenom"
+in APPPATH\Views\devis\listeclient.php on line 117.
+ 1 APPPATH\Views\devis\listeclient.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\listeclient.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listeclient.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listeclient', [], true)
+ 5 APPPATH\Controllers\AddClientController.php(34): view('devis/listeclient', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 01:29:54 --> Undefined array key "prenom"
+in APPPATH\Views\devis\modifierclient.php on line 120.
+ 1 APPPATH\Views\devis\modifierclient.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\modifierclient.php', 120)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierclient.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierclient', [], true)
+ 5 APPPATH\Controllers\AddClientController.php(41): view('devis/modifierclient', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 01:30:12 --> Undefined property: stdClass::$prenom
+in APPPATH\Views\devis\ajouterdevis.php on line 116.
+ 1 APPPATH\Views\devis\ajouterdevis.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$prenom', 'APPPATH\\Views\\devis\\ajouterdevis.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\ajouterdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/ajouterdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(24): view('devis/ajouterdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->ajouterdevis()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 01:30:16 --> Undefined property: stdClass::$prenom
+in APPPATH\Views\devis\ajouterdevis.php on line 116.
+ 1 APPPATH\Views\devis\ajouterdevis.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$prenom', 'APPPATH\\Views\\devis\\ajouterdevis.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\ajouterdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/ajouterdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(24): view('devis/ajouterdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->ajouterdevis()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 01:30:26 --> Undefined property: stdClass::$prenom
+in APPPATH\Views\devis\ajouterdevis.php on line 116.
+ 1 APPPATH\Views\devis\ajouterdevis.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$prenom', 'APPPATH\\Views\\devis\\ajouterdevis.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\ajouterdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/ajouterdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(24): view('devis/ajouterdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->ajouterdevis()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-06 01:34:05 --> mysqli_sql_exception: Column 'montant_rest' cannot be null in C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\app\Controllers\DevisController.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
+#9 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#10 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Simohammed\Desktop\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Simoha...')
+#13 {main}
+CRITICAL - 2023-04-06 01:34:05 --> Column 'montant_rest' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paiment` (`id_devis`, `montant_paye`, `montant_rest`, `date_dernier_paiment`, `status`, `status_litige`, `status_paiment`) VALUES (:id_devis:, :montant_paye:, :montant_rest:, :date_dernier_paiment:, :status:, :status_litige:, :status_paiment:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DevisController.php(50): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 01:36:27 --> Undefined array key "prenom"
+in APPPATH\Controllers\DevisController.php on line 99.
+ 1 APPPATH\Controllers\DevisController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Controllers\\DevisController.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-06 13:53:28 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\DevisController.php on line 190.
- 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+CRITICAL - 2023-04-06 01:36:47 --> Undefined array key "prenom"
+in APPPATH\Views\devis\listerdevis.php on line 141.
+ 1 APPPATH\Views\devis\listerdevis.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\listerdevis.php', 141)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(111): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 01:37:38 --> Undefined array key "prenom"
+in APPPATH\Views\devis\affichage.php on line 117.
+ 1 APPPATH\Views\devis\affichage.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\affichage.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\affichage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/affichage', [], true)
+ 5 APPPATH\Controllers\DevisController.php(272): view('devis/affichage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->list('04-002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 01:51:44 --> Undefined array key "prenom"
+in APPPATH\Views\devis\modifierdevis.php on line 127.
+ 1 APPPATH\Views\devis\modifierdevis.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\modifierdevis.php', 127)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(204): view('devis/modifierdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('04-002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 08:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 08:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 08:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 08:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 08:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 08:48:47 --> Undefined array key "prenom"
+in APPPATH\Views\devis\modifierclient.php on line 120.
+ 1 APPPATH\Views\devis\modifierclient.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\modifierclient.php', 120)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierclient.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierclient', [], true)
+ 5 APPPATH\Controllers\AddClientController.php(41): view('devis/modifierclient', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 09:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 09:10:47 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 09:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 09:17:27 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 09:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 09:17:36 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 09:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 09:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-06 11:49:37 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'devis' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'devis', 3306, '', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Gestion Devis et Factures\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'devis' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+INFO - 2023-04-06 11:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 11:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 11:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 11:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-06 11:53:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`devis`.`devis`, CONSTRAINT `devis_id_client_foreign` FOREIGN KEY (`id_client`) REFERENCES `client` (`id_client`)) in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Gestion Devis et Factures\app\Controllers\DevisController.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
+#9 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#10 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-06 11:53:32 --> Cannot add or update a child row: a foreign key constraint fails (`devis`.`devis`, CONSTRAINT `devis_id_client_foreign` FOREIGN KEY (`id_client`) REFERENCES `client` (`id_client`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `devis` (`id_devis`, `id_client`, `date_saisie`, `total_ht`, `total_ttc`, `modalite_paiement`, `etat`) VALUES (:id_devis:, :id_client:, :date_saisie:, :total_ht:, :total_ttc:, :modalite_paiement:, :etat:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DevisController.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:08:20 --> Undefined array key "prenom"
+in APPPATH\Views\devis\modifierdevis.php on line 127.
+ 1 APPPATH\Views\devis\modifierdevis.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prenom"', 'APPPATH\\Views\\devis\\modifierdevis.php', 127)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(204): view('devis/modifierdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('04-002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 12:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 12:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 12:12:44 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-06 12:13:20 --> mysqli_sql_exception: Unknown column 'prenom' in 'field list' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', NULL, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\Gestion Devis et Factures\app\Database\Seeds\ClientSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\Seeder.php(146): App\Database\Seeds\ClientSeeder->run()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\Gestion Devis et Factures\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-06 12:13:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`devis`.`facture`, CONSTRAINT `facture_id_paiment_foreign` FOREIGN KEY (`id_paiment`) REFERENCES `paiment` (`id_paiment`)) in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', NULL, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\Gestion Devis et Factures\app\Database\Seeds\FactureSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\Seeder.php(146): App\Database\Seeds\FactureSeeder->run()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\Gestion Devis et Factures\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-06 12:13:41 --> mysqli_sql_exception: Unknown column 'prenom' in 'field list' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', NULL, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\Gestion Devis et Factures\app\Database\Seeds\ClientSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\Seeder.php(146): App\Database\Seeds\ClientSeeder->run()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\Gestion Devis et Factures\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-04-06 12:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 12:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 12:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 12:17:38 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 12:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 12:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 12:18:14 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 12:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 12:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 12:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 12:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-06 12:32:44 --> mysqli_sql_exception: Unknown column 'client.prenom' in 'where clause' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `client`...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client`...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client`...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`...', Array, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\app\Controllers\DevisController.php(130): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-06 12:32:44 --> Unknown column 'client.prenom' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`.*, `devis`.*, `service`.*, `lignecommande`.*
+FROM `client`
+JOIN `devis` ON `devis`.`id_client` = `client`.`id_client`
+JOIN `lignecommande` ON `lignecommande`.`id_devis` = `devis`.`id_devis`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `client`.`nom` = :client.nom:
+OR `client`.`prenom` = :client.prenom:
+OR `devis`.`id_devis` = :devis.id_devis:
+OR `devis`.`total_ht` = :devis.total_ht:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(130): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-06 12:33:34 --> mysqli_sql_exception: Unknown column 'client.prenom' in 'where clause' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `client`...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client`...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client`...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`...', Array, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\app\Controllers\DevisController.php(130): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-06 12:33:34 --> Unknown column 'client.prenom' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`.*, `devis`.*, `service`.*, `lignecommande`.*
+FROM `client`
+JOIN `devis` ON `devis`.`id_client` = `client`.`id_client`
+JOIN `lignecommande` ON `lignecommande`.`id_devis` = `devis`.`id_devis`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `client`.`nom` = :client.nom:
+OR `client`.`prenom` = :client.prenom:
+OR `devis`.`id_devis` = :devis.id_devis:
+OR `devis`.`total_ht` = :devis.total_ht:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(130): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-06 12:35:46 --> mysqli_sql_exception: Unknown column 'client.prenom' in 'where clause' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `client`...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client`...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client`...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`...', Array, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\app\Controllers\DevisController.php(130): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-06 12:35:46 --> Unknown column 'client.prenom' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`.*, `devis`.*, `service`.*, `lignecommande`.*
+FROM `client`
+JOIN `devis` ON `devis`.`id_client` = `client`.`id_client`
+JOIN `lignecommande` ON `lignecommande`.`id_devis` = `devis`.`id_devis`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `client`.`nom` = :client.nom:
+OR `client`.`prenom` = :client.prenom:
+OR `devis`.`id_devis` = :devis.id_devis:
+OR `devis`.`total_ht` = :devis.total_ht:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(130): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-06 12:39:37 --> mysqli_sql_exception: Unknown column 'client.prenom' in 'where clause' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `client`...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client`...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client`...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`...', Array, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\app\Controllers\DevisController.php(130): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-06 12:39:37 --> Unknown column 'client.prenom' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`.*, `devis`.*, `service`.*, `lignecommande`.*
+FROM `client`
+JOIN `devis` ON `devis`.`id_client` = `client`.`id_client`
+JOIN `lignecommande` ON `lignecommande`.`id_devis` = `devis`.`id_devis`
+JOIN `service` ON `service`.`id_service` = `lignecommande`.`id_service`
+WHERE `client`.`nom` = :client.nom:
+OR `client`.`prenom` = :client.prenom:
+OR `devis`.`id_devis` = :devis.id_devis:
+OR `devis`.`total_ht` = :devis.total_ht:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(130): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:41:55 --> Undefined array key "infos"
+in APPPATH\Views\devis\search.php on line 144.
+ 1 APPPATH\Views\devis\search.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "infos"', 'APPPATH\\Views\\devis\\search.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/search', [], true)
+ 5 APPPATH\Controllers\DevisController.php(135): view('devis/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:45:25 --> Undefined property: mysqli::$id_devis
+in APPPATH\Controllers\AddClientController.php on line 79.
+ 1 APPPATH\Controllers\AddClientController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$id_devis', 'APPPATH\\Controllers\\AddClientController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:46:38 --> Undefined property: mysqli::$id_devis
+in APPPATH\Controllers\AddClientController.php on line 79.
+ 1 APPPATH\Controllers\AddClientController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$id_devis', 'APPPATH\\Controllers\\AddClientController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:50:04 --> Undefined property: mysqli::$id_devis
+in APPPATH\Controllers\AddClientController.php on line 79.
+ 1 APPPATH\Controllers\AddClientController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$id_devis', 'APPPATH\\Controllers\\AddClientController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->deleteclient('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:51:03 --> Undefined property: mysqli::$id_devis
+in APPPATH\Controllers\AddClientController.php on line 79.
+ 1 APPPATH\Controllers\AddClientController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$id_devis', 'APPPATH\\Controllers\\AddClientController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:52:10 --> Undefined property: mysqli::$id_devis
+in APPPATH\Controllers\AddClientController.php on line 79.
+ 1 APPPATH\Controllers\AddClientController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$id_devis', 'APPPATH\\Controllers\\AddClientController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:54:14 --> property_exists(): Argument #1 ($object_or_class) must be of type object|string, array given
+in APPPATH\Controllers\AddClientController.php on line 79.
+ 1 APPPATH\Controllers\AddClientController.php(79): property_exists([], 'id_devis')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:55:04 --> array_key_exists(): Argument #2 ($array) must be of type array, mysqli given
+in APPPATH\Controllers\AddClientController.php on line 79.
+ 1 APPPATH\Controllers\AddClientController.php(79): array_key_exists('id_devis', Object(mysqli))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 12:55:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Controllers\AddClientController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddClientController->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddClientController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 13:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 13:33:48 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 13:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 13:36:52 --> Undefined variable $fcture
+in APPPATH\Controllers\FactureController.php on line 54.
+ 1 APPPATH\Controllers\FactureController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fcture', 'APPPATH\\Controllers\\FactureController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FactureController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactureController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 13:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 13:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 13:59:48 --> Undefined array key "infos"
+in APPPATH\Views\devis\search.php on line 144.
+ 1 APPPATH\Views\devis\search.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "infos"', 'APPPATH\\Views\\devis\\search.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/search', [], true)
+ 5 APPPATH\Controllers\DevisController.php(135): view('devis/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 14:04:21 --> Undefined variable $dv
+in APPPATH\Controllers\DevisController.php on line 131.
+ 1 APPPATH\Controllers\DevisController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dv', 'APPPATH\\Controllers\\DevisController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-06 13:53:35 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\DevisController.php on line 190.
- 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+CRITICAL - 2023-04-06 14:04:47 --> Undefined array key "id_devis"
+in APPPATH\Controllers\DevisController.php on line 131.
+ 1 APPPATH\Controllers\DevisController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_devis"', 'APPPATH\\Controllers\\DevisController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
-CRITICAL - 2023-04-06 13:53:40 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\DevisController.php on line 190.
- 1 APPPATH\Controllers\DevisController.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 190)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('logofms.png')
+CRITICAL - 2023-04-06 14:06:03 --> Undefined variable $devis
+in APPPATH\Controllers\DevisController.php on line 131.
+ 1 APPPATH\Controllers\DevisController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $devis', 'APPPATH\\Controllers\\DevisController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 14:06:28 --> Undefined variable $modelService
+in APPPATH\Controllers\DevisController.php on line 134.
+ 1 APPPATH\Controllers\DevisController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modelService', 'APPPATH\\Controllers\\DevisController.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->searchs1()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-06 15:20:24 --> mysqli_sql_exception: Duplicate entry '1-04-002' for key 'PRIMARY' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Gestion Devis et Factures\app\Controllers\DevisController.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
+#9 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#10 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-06 15:20:24 --> Duplicate entry '1-04-002' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lignecommande` (`id_service`, `id_devis`, `qte_commande`, `description_service`, `prix_unitaire`) VALUES (:id_service:, :id_devis:, :qte_commande:, :description_service:, :prix_unitaire:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DevisController.php(63): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->storeDevis()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:22:41 --> Undefined array key "titre"
+in APPPATH\Views\devis\listerdevis.php on line 163.
+ 1 APPPATH\Views\devis\listerdevis.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titre"', 'APPPATH\\Views\\devis\\listerdevis.php', 163)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\listerdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/listerdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(111): view('devis/listerdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:23:32 --> Undefined array key "titre"
+in APPPATH\Controllers\DevisController.php on line 102.
+ 1 APPPATH\Controllers\DevisController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titre"', 'APPPATH\\Controllers\\DevisController.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-06 15:27:17 --> mysqli_sql_exception: Unknown table 'devis.*,service' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `client`...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client`...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client`...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`...', Array, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\app\Controllers\DevisController.php(86): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-06 15:27:17 --> Unknown table 'devis.*,service'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `client`.*, `devis`.`*,service`.*
+FROM `client`
+JOIN `devis` ON `devis`.`id_client` = `client`.`id_client`
+JOIN `lignecommande` ON `lignecommande`.`id_devis` = `devis`.`id_devis`
+JOIN `service` ON `lignecommande`.`id_service` = `service`.`id_service`
+ORDER BY `devis`.`id_devis` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DevisController.php(86): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->liste()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:27:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DevisController.php on line 238.
+ 1 APPPATH\Controllers\DevisController.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\DevisController.php', 238)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:34:39 --> Cannot use object of type App\Models\DevisModel as array
+in APPPATH\Controllers\DevisController.php on line 238.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-06 15:35:35 --> mysqli_sql_exception: Unknown column 'ligncommande.id_service' in 'on clause' in C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Gestion Devis et Factures\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Gestion Devis et Factures\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Gestion Devis et Factures\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Gestion Devis et Factures\app\Controllers\DevisController.php(239): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi...')
+#8 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+#9 C:\xampp\htdocs\Gestion Devis et Factures\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Gestion Devis et Factures\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Gestion Devis et Factures\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-06 15:35:35 --> Unknown column 'ligncommande.id_service' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lignecommande`
+JOIN `service` ON `service`.`id_service` = `ligncommande`.`id_service`
+WHERE `service`.`titre` = :service.titre:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\DevisController.php(239): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:35:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\devis\modifierdevis.php on line 103.
+ 1 APPPATH\Views\devis\modifierdevis.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\devis\\modifierdevis.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\devis\\modifierdevis.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('devis/modifierdevis', [], true)
+ 5 APPPATH\Controllers\DevisController.php(247): view('devis/modifierdevis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:37:22 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\DevisController.php on line 238.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:39:06 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\DevisController.php on line 238.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:39:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultArry()
+in APPPATH\Controllers\DevisController.php on line 236.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:40:03 --> Undefined array key "id_client"
+in APPPATH\Controllers\DevisController.php on line 238.
+ 1 APPPATH\Controllers\DevisController.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_client"', 'APPPATH\\Controllers\\DevisController.php', 238)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 15:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 15:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 15:41:55 --> Undefined array key "id_client"
+in APPPATH\Controllers\DevisController.php on line 238.
+ 1 APPPATH\Controllers\DevisController.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_client"', 'APPPATH\\Controllers\\DevisController.php', 238)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 15:45:45 --> Undefined array key "id_client"
+in APPPATH\Controllers\DevisController.php on line 238.
+ 1 APPPATH\Controllers\DevisController.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_client"', 'APPPATH\\Controllers\\DevisController.php', 238)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DevisController->edit('Culpa sint modi do')
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DevisController))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

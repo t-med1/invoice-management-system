@@ -40,17 +40,17 @@ class DevisModel extends Model
       // Get the month from the date_saisie
       $month = date('m', strtotime($dateSaisie));
     
-      // Generate the prefix for the id_facture
+      // Generate the prefix for the id_devis
       $prefix = $month .'-';
     
-      // Get the maximum id_facture for the selected month
+      // Get the maximum id_devis for the selected month
       $max_id_devis = $this->db->table('devis')
                                 ->selectMax('id_devis')
                                 ->where('SUBSTRING(id_devis, 1, 2)', $month)
                                 ->get()
                                 ->getRowArray()['id_devis'];
     
-      // Increment the id_facture number
+      // Increment the id_devis number
       if ($max_id_devis) {
         $id_devis_num = intval(substr($max_id_devis, -3)) + 1;
       } else {
@@ -59,7 +59,7 @@ class DevisModel extends Model
             
       $id_devis_num_str = sprintf('%03d', $id_devis_num);
     
-      // Combine the prefix and id_facture number to create the final id_facture
+      // Combine the prefix and id_devis number to create the final id_devis
       $id_devis = $prefix . $id_devis_num_str;
     
       return $id_devis;

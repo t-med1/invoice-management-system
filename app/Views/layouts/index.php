@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,7 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
 	<!-- My CSS -->
 	<link rel="stylesheet" href="../../css/home.css">
@@ -22,8 +21,6 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="../../style.css">
-	<link rel="stylesheet" href="../css/home.css">
-	<link rel="stylesheet" href="../../css/affichage2.css">
 	<style>
 		.text-container {
 			overflow: hidden;
@@ -36,24 +33,21 @@
 		}
 
 		@keyframes move-left-to-right {
-			0% {
-				transform: translateX(-100%);
-			}
-
-			100% {
-				transform: translateX(100%);
-			}
+		0% {
+			transform: translateX(-100%);
+		}
+		100% {
+			transform: translateX(100%);
+		}
 		}
 
 		.text-animated:hover {
 			animation-play-state: paused;
 		}
 
-		<?php $this->renderSection('css') ?>
 	</style>
-	<title><?php $this->renderSection('title') ?></title>
+	<title><?php $this->renderSection('title')?></title>
 </head>
-
 <body>
 	<!-- SIDEBAR -->
 	<section id="sidebar">
@@ -62,51 +56,42 @@
 			<span class="text"><img src="../../logofes.png" width="180" alt="fes marketing Logo"></span>
 		</a>
 		<ul class="side-menu top">
-			<li class="<?php $this->renderSection('fct') ?>">
-				<a href="/facture">
-					<i><img style="width:21px;margin:9px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVRJREFUSEvl1r0uREEUwPHflmiEB0DtI2oVvagpPIRGRINCFAqvQCEUGgm1F9CJREHCC+goFMjIvZtxdzf37t6JJU4yyf2Yc/7na06moU/S6BPXrwAHJ6YxkiALz7jBRydbccTLOEkAzU2s4LQKeBtbCcE7CDbbShxxDF6o4cBVptsTuE7T5XWtBR5HWGXyiLCCJAFXrXsc3d8G9y3VZbVt9z9JqutEfITDyLNv06zTOc6/12mudtloTrOfBje7vwycKtUt06wMnKq5WhquV/AwZiOvyiZXMvA88vQFftnk+vvgpKnexG5WtyG89tJZeOfrLrePdQziJbMVGHvhOW6uJZxnGw5wkRnpln+GUTxgA3NYy4ws4rIIHsAtJrolVdx/j0m8FcHhfQbHmKporOq2a6ziLlfodMUJE2usUIqqkHhfOEbhjD8VlevcrXpxpKnz/8CfZmZ0H0/VX+QAAAAASUVORK5CYII=" /></i>
-					<span class="text">Factures</span>
-				</a>
-			</li>
-			<br>
-			<li class="<?php $this->renderSection('home') ?>">
+			<li class="<?php $this->renderSection('home')?>">
 				<a href="/devis">
-					<i class='bx bxs-dashboard'></i>
+					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
-			<li class="<?php $this->renderSection('Nouveau Devis') ?>">
+			<li class="<?php $this->renderSection('Nouveau Devis')?>">
 				<a href="/createDevis">
 					<i class='bx bx-add-to-queue'></i>
 					<span class="text">Nouveau Devis</span>
 				</a>
 			</li>
-
-			<li class="<?php $this->renderSection('liste Service') ?>">
-				<a href="/listeService">
-					<i class='bx bx-list-ul'></i>
-					<span class="text">liste Service</span>
-				</a>
-			</li>
-			<li class="<?php $this->renderSection('Nouveau Service') ?>">
+			<li class="<?php $this->renderSection('Nouveau Service')?>">
 				<a href="/createService">
 					<i class='bx bxs-add-to-queue'></i>
 					<span class="text">Nouveau Service</span>
 				</a>
 			</li>
-			<li class="<?php $this->renderSection('liste client') ?>">
-				<a href="/listeClient">
-					<i class='bx bx-list-ol'></i>
-					<span class="text">Liste client</span>
+			<li class="<?php $this->renderSection('liste Service')?>">
+				<a href="/listeService">
+					<i class='bx bx-list-ul'></i>
+					<span class="text">liste Service</span>
 				</a>
 			</li>
-			<li class="<?php $this->renderSection('Nouveau client') ?>">
+			<li class="<?php $this->renderSection('Nouveau client')?>">
 				<a href="/createClient">
 					<i class='bx bxs-user-plus'></i>
 					<span class="text">Nouveau client</span>
 				</a>
 			</li>
-
+			<li class="<?php $this->renderSection('liste client')?>">
+				<a href="/listeClient">
+					<i class='bx bx-list-ol'></i>
+					<span class="text">Liste client</span>
+				</a>
+			</li>
 		</ul>
 		<ul class="side-menu">
 			<li>
@@ -125,24 +110,22 @@
 	<section id="content">
 		<!-- NAVBAR -->
 		<nav>
-			<i class='bx bx-menu'></i>
-			<?php $this->renderSection('nav') ?>
+			<i class='bx bx-menu' ></i>
 			<form action="/searchDevis" method="POST">
-				<div class="form-input" <?php $this->renderSection('type') ?>>
+				<div class="form-input">
 					<input type="search" name="searchNormal">
-					<button type="submit" class="search-btn">
-						<i id="datee" class='bx bx-search'></i>
-					</button>
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
 			</form>
-
 			<form action="/searchDevisByDate" method="POST">
-				<div class="form-input" <?php $this->renderSection('datee') ?>>
+				<div class="form-input">
 					<input type="date" name="dateSearch">
-					<button type="submit" class="search-btn"><i id="datee" class='bx bx-search'></i></button>
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
 			</form>
-
+			<a href="/facture" class="profile">
+				<img src="../../img/people.png">
+			</a>
 		</nav>
 		<!-- NAVBAR -->
 
@@ -150,32 +133,36 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1 class="text-primary"><?php $this->renderSection('h1') ?></h1>
+					<h1 class="text-primary"><?php $this->renderSection('h1')?></h1>
 					<ul class="breadcrumb">
 						<li>
 							<a href="/facture">Dashboard</a>
 						</li>
-						<li><i class='bx bx-chevron-right'></i></li>
+						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
 							<a class="active" href="/devis">Home</a>
 						</li>
 					</ul>
 				</div>
-
+				
 			</div>
 			<div class="mt-4">
 				<div class="content-wrapper">
 					<div class="container">
-						<?php $this->renderSection('content') ?>
+						<?php $this->renderSection('content')?>
 					</div>
 				</div>
 			</div>
 		</main>
 		<!-- MAIN -->
-
+		<article class="container" style="width: 50%">
+			<div class="text-container">
+				<span class="text-animated"><a href="#" class="text-danger" id='redirect'>Tu Veux Voir Les Pages Des Factures?</a></span>
+			</div>
+		</article>
 	</section>
 	<!-- CONTENT -->
-
+	
 
 	<script src="../script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -193,6 +180,8 @@
 				if (result.isConfirmed) {
 					location.href = '/';
 					// Swal.fire('Saved!', '', 'success')
+				} else if (result.isDenied) {
+					Swal.fire('Mercie !!', '', 'info')
 				}
 			})
 		})
@@ -214,5 +203,4 @@
 		})
 	</script>
 </body>
-
 </html>

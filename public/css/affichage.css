@@ -1,0 +1,119 @@
+body {
+    /* background-image: url("net.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px); */
+    height: 100vh;
+}
+.devis {
+    width: 70%;
+    margin: 0 auto;
+    height: 65rem;
+    /* height: 144vh; */
+    background: url('Devis.jpg') no-repeat center;
+    background-size: cover;
+    padding-top: 15.1rem;
+    padding-inline: 5rem;
+}
+.info {
+    position: relative;
+    height: 16%;
+}
+.info p {
+    font-size: 0.8vw;
+    position: absolute;
+    width: max-content;
+}
+.nom {
+    left: 13%;
+    top: 1%;
+}
+.adresse {
+    left: 13%;
+    top: 14.5%;
+}
+.pays {
+    left: 13%;
+    top: 42%;
+}
+.ville {
+    left:50%;
+    top: 41%;
+}
+.tel {
+    left: 13%;
+    top: 55.5%;
+}
+.date {
+    left:85%;
+    top: 1%;
+}
+.num {
+    left:85%;
+    top: 14.5%;
+}
+.details-container{
+    height: 39.1%;
+}
+.details {
+    display: flex;
+    width: 100%;
+    font-size: small;
+    padding: 0;
+}
+.details p {
+    width: 14%;
+    text-align: center;
+}
+.details p:nth-child(2) {
+    flex-grow: 1;
+    text-align: left;
+}
+.titre {
+    display: block;
+    font-weight: bold;
+}
+
+.buttom{
+    position: relative;
+    width: 100%;
+    height: 18%;
+}
+
+.buttom p {
+    font-size: small;
+    position: absolute;
+    text-align: center;
+}
+
+.sous-total{
+    left: 85.5%;
+    width: 14%;
+}
+
+.tva{
+    left: 85.5%;
+    width: 14%;
+    top: 33.5%;
+}
+
+.ttc{
+    left: 85.5%;
+    width: 14%;
+    top: 46%;
+}
+
+.modalité{
+    top: 64%;
+    width: 43%;
+}
+
+
+
+
+
+
+
+
+

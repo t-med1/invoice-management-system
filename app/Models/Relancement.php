@@ -14,7 +14,7 @@ class Relancement extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_client','relance_faite'];//En cours de traitement
+    protected $allowedFields    = ['id_client','id_facture','relance_faite'];//En cours de traitement
 
     // Dates
     protected $useTimestamps = false;

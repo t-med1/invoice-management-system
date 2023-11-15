@@ -37,11 +37,6 @@ class Facture extends Migration
                 'type' => 'DATE',
                 'null' => false
             ],
-            'relance_faite'=>[
-                'type' => 'BOOLEAN',
-                'default' => false,
-                'null' => false
-            ],
         ]);
         $this->forge->addKey('id_facture', true);
         $this->forge->addForeignKey('id_client','client','id_client');

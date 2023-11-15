@@ -32,7 +32,7 @@
       <p class="text-info">
         <?php if (session()->has('nom_complet')): ?>
           <?php
-            echo session('nom_complet');
+          echo session('nom_complet');
           ?>
         <?php endif; ?>
       </p>

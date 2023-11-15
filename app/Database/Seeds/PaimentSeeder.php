@@ -11,7 +11,7 @@ class PaimentSeeder extends Seeder
         // add the initial informations
         $data = [
             [
-                "id_facture" => '04-001',
+                "id_devis" => '03-001',
                 'montant_paye' => 2000.00,
                 'montant_rest' => 0,
                 'date_dernier_paiment' => '2020-03-13',
@@ -20,7 +20,7 @@ class PaimentSeeder extends Seeder
                 'status_paiment' => 'encaissee',
             ],
             [
-                "id_facture" => '04-002',
+                "id_devis" => '03-002',
                 'montant_paye' => 0,
                 'montant_rest' => 1500,
                 'date_dernier_paiment' => '',
